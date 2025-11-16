@@ -181,9 +181,9 @@ pip install -r requirements.txt
 
 ## 👨‍💻 سازنده
 
-**نام شما**
+**PR-M**
 - GitHub: [@Scary-technologies](https://github.com/Scary-technologies)
-- Email: your.email@example.com
+
 
 ## 📞 پشتیبانی
 

@@ -6,8 +6,37 @@ import queue
 import time
 import sounddevice as sd
 import numpy as np
+import logging
+import socket
+from datetime import datetime
+
+from whisper_api import whisper_recognize
+from usage_tracker import get_tracker
+import openai
+
+# Configure logging for service tracking
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler('transcription.log'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger(__name__)
 
 class SokhanNegarLive:
+    # Service status color constants
+    SERVICE_COLORS = {
+        'Whisper API': '#4CAF50',      # Green
+        'Google (Fallback)': '#FFC107'  # Yellow/Amber
+    }
+    
+    SERVICE_ICONS = {
+        'Whisper API': '🟢',
+        'Google (Fallback)': '🟡'
+    }
+    
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("سخن نگار")
@@ -20,11 +49,24 @@ class SokhanNegarLive:
         self.is_listening = False
         self.audio_queue = queue.Queue()
         
+        # Initialize usage tracker
+        self.tracker = get_tracker()
+        logger.info("Usage tracker initialized")
+        
+        # Service and usage tracking state
+        self.current_service = 'Whisper API'  # Default to Whisper
+        
         # ایجاد رابط کاربری
         self.create_ui()
         
         # شروع thread گوش دادن
         self.listen_thread = None
+        
+        # Log initial usage stats
+        self.log_usage_stats()
+        
+        # Initialize UI with current stats
+        self.update_usage_stats_display()
     
     def create_ui(self):
         """ایجاد رابط کاربری مینیمال"""
@@ -48,6 +90,20 @@ class SokhanNegarLive:
                                     font=('Segoe UI', 10), 
                                     fg='#888888', bg='#1e1e1e')
         self.status_label.pack(padx=15, anchor=tk.W)
+        
+        # Service status indicator
+        self.service_status_label = tk.Label(self.root, 
+                                           text="🟢 Whisper API",
+                                           font=('Segoe UI', 9, 'bold'),
+                                           fg='#4CAF50', bg='#1e1e1e')
+        self.service_status_label.pack(padx=15, anchor=tk.W)
+        
+        # Usage statistics label
+        self.usage_stats_label = tk.Label(self.root,
+                                         text="Processed: 0.00 minutes | Est. Cost: $0.00",
+                                         font=('Segoe UI', 9),
+                                         fg='#888888', bg='#1e1e1e')
+        self.usage_stats_label.pack(padx=15, anchor=tk.W, pady=(3, 0))
         
         text_frame = tk.Frame(self.root, bg='#1e1e1e')
         text_frame.pack(fill=tk.BOTH, expand=True, padx=15, pady=(10, 15))
@@ -123,6 +179,9 @@ class SokhanNegarLive:
         self.is_listening = False
         self.toggle_button.config(text="▶ شروع", bg='#4CAF50')
         self.status_label.config(text="● متوقف شده", fg='#888888')
+        
+        # Log usage statistics when stopping
+        self.log_usage_stats()
     
     def listen_continuously(self):
         """گوش دادن مداوم با sounddevice"""
@@ -145,19 +204,79 @@ class SokhanNegarLive:
             try:
                 audio = self.audio_queue.get(timeout=1)
                 self.root.after(0, self.update_status, "در حال پردازش...")
-                text = self.recognizer.recognize_google(audio, language='fa-IR')
-                if text.strip():
+                
+                # Try Whisper API first
+                text = None
+                service_used = None
+                
+                try:
+                    logger.info("Attempting transcription with Whisper API...")
+                    text = whisper_recognize(audio)
+                    service_used = "Whisper API"
+                    logger.info(f"✓ Whisper API successful: '{text[:50]}...'")
+                    
+                except openai.AuthenticationError as e:
+                    logger.warning(f"Whisper authentication failed: {e}")
+                    logger.info("Falling back to Google Speech Recognition...")
+                    
+                except openai.RateLimitError as e:
+                    logger.warning(f"Whisper rate limit exceeded: {e}")
+                    logger.info("Falling back to Google Speech Recognition...")
+                    
+                except openai.APIError as e:
+                    logger.warning(f"Whisper API error: {e}")
+                    logger.info("Falling back to Google Speech Recognition...")
+                    
+                except (socket.timeout, socket.gaierror, socket.error, ConnectionError) as e:
+                    logger.warning(f"Whisper network error: {e}")
+                    logger.info("Falling back to Google Speech Recognition...")
+                    
+                except ValueError as e:
+                    logger.warning(f"Whisper audio format error: {e}")
+                    logger.info("Falling back to Google Speech Recognition...")
+                    
+                except Exception as e:
+                    logger.warning(f"Unexpected Whisper error: {e}")
+                    logger.info("Falling back to Google Speech Recognition...")
+                
+                # If Whisper failed, fall back to Google
+                if text is None:
+                    try:
+                        logger.info("Attempting transcription with Google Speech Recognition...")
+                        text = self.recognizer.recognize_google(audio, language='fa-IR')
+                        service_used = "Google (Fallback)"
+                        logger.info(f"✓ Google API successful: '{text[:50]}...'")
+                        # Update service status to Google fallback
+                        self.root.after(0, self.update_service_status, "Google (Fallback)")
+                        
+                    except sr.UnknownValueError:
+                        logger.info("Google: Could not understand audio")
+                        continue
+                        
+                    except sr.RequestError as e:
+                        logger.error(f"Google API error: {e}")
+                        self.root.after(0, self.update_status, f"خطا در سرویس: {e}")
+                        time.sleep(2)
+                        self.root.after(0, self.update_status, "● در حال گوش دادن...")
+                        continue
+                
+                # Update service status if Whisper succeeded
+                if service_used == "Whisper API":
+                    self.root.after(0, self.update_service_status, "Whisper API")
+                
+                # Display result if text was successfully transcribed
+                if text and text.strip():
+                    log_msg = f"[{service_used}] {text[:100]}"
+                    logger.info(f"Transcription result: {log_msg}")
                     self.root.after(0, self.add_text, text)
                     self.root.after(0, self.update_status, "● در حال گوش دادن...")
+                    # Update usage statistics after successful transcription
+                    self.root.after(0, self.update_usage_stats_display)
+                    
             except queue.Empty:
                 continue
-            except sr.UnknownValueError:
-                continue
-            except sr.RequestError as e:
-                self.root.after(0, self.update_status, f"خطا در سرویس: {e}")
-                time.sleep(2)
-                self.root.after(0, self.update_status, "● در حال گوش دادن...")
             except Exception as e:
+                logger.error(f"Unexpected error in process_audio_queue: {e}")
                 print(f"خطا در پردازش: {e}")
     
     def add_text(self, text):
@@ -172,6 +291,69 @@ class SokhanNegarLive:
     
     def update_status(self, message):
         self.status_label.config(text=message)
+    
+    def update_service_status(self, service_name):
+        """
+        Update the service status indicator label (thread-safe).
+        
+        Args:
+            service_name: "Whisper API" or "Google (Fallback)"
+        """
+        try:
+            self.current_service = service_name
+            icon = self.SERVICE_ICONS.get(service_name, '●')
+            color = self.SERVICE_COLORS.get(service_name, '#888888')
+            
+            status_text = f"{icon} {service_name}"
+            self.service_status_label.config(text=status_text, fg=color)
+            logger.info(f"Service status updated: {service_name}")
+        except Exception as e:
+            logger.error(f"Error updating service status: {e}")
+    
+    def update_usage_stats_display(self):
+        """
+        Update the usage statistics label with current data (thread-safe).
+        Fetches latest stats from UsageTracker and displays them.
+        """
+        try:
+            stats = self.tracker.get_usage_stats()
+            total_minutes = stats['total_minutes']
+            estimated_cost = stats['estimated_cost']
+            
+            stats_text = f"Processed: {total_minutes:.2f} minutes | Est. Cost: {estimated_cost}"
+            self.usage_stats_label.config(text=stats_text)
+            logger.info(f"Usage stats updated: {stats_text}")
+        except Exception as e:
+            logger.error(f"Error updating usage stats display: {e}")
+    
+    def log_usage_stats(self):
+        """Log current usage statistics to console."""
+        try:
+            tracker = get_tracker()
+            stats = tracker.get_usage_stats()
+            
+            log_msg = (
+                f"\n{'='*50}\n"
+                f"Whisper API Usage Statistics\n"
+                f"{'='*50}\n"
+                f"Total Minutes Processed: {stats['total_minutes']:.2f}\n"
+                f"Estimated Cost: {stats['estimated_cost']}\n"
+                f"Successful Minutes: {stats['successful_minutes']:.2f}\n"
+                f"Failed Attempts: {stats['failed_attempts']}\n"
+                f"Today's Minutes: {stats['daily_minutes']:.2f}\n"
+                f"This Week's Minutes: {stats['weekly_minutes']:.2f}\n"
+                f"Last Updated: {stats['last_updated']}\n"
+                f"{'='*50}\n"
+            )
+            logger.info(log_msg)
+            
+            # Check for cost warning
+            is_over, current_cost, threshold = tracker.get_cost_warning(threshold_cost=1.0)
+            if is_over:
+                logger.warning(f"⚠️ Cost warning: Current usage cost (${current_cost:.2f}) exceeds threshold (${threshold:.2f})")
+        
+        except Exception as e:
+            logger.error(f"Error logging usage stats: {e}")
     
     def clear_text(self):
         self.text_area.delete("1.0", tk.END)

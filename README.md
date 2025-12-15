@@ -20,6 +20,48 @@
 - میکروفون فعال
 - اتصال اینترنت (برای سرویس تشخیص گفتار)
 
+## ⚙️ Configuration & Setup
+
+### OpenAI API Key Configuration
+
+This project integrates with OpenAI's API for advanced speech recognition capabilities. Follow these steps to configure your API key:
+
+#### 1. Obtain an OpenAI API Key
+
+1. Visit [OpenAI Platform](https://platform.openai.com/)
+2. Sign in to your account (or create a new one)
+3. Navigate to [API Keys](https://platform.openai.com/api-keys)
+4. Click "Create new secret key"
+5. Copy the generated API key (store it safely - you won't be able to see it again)
+
+#### 2. Configure the Environment File
+
+1. Copy the `.env.example` file to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit the `.env` file and add your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_actual_api_key_here
+   ```
+
+#### 3. Security Reminder
+
+⚠️ **IMPORTANT**: The `.env` file contains sensitive information and is automatically excluded from version control (listed in `.gitignore`). **Never commit this file to your repository.**
+
+- `.env` file is for your local development only
+- Each developer should have their own `.env` file
+- Never share your API key in code, commits, or public repositories
+
+#### 4. Install Dependencies
+
+Once your `.env` file is configured, install all required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## 🚀 نصب
 
 ### 1. دانلود یا کلون کردن پروژه

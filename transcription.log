@@ -1,0 +1,1082 @@
+2025-12-15 12:27:42,167 - INFO - Usage tracker initialized
+2025-12-15 12:27:42,946 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 0.00
+Estimated Cost: $0.00
+Successful Minutes: 0.00
+Failed Attempts: 0
+Today's Minutes: 0.00
+This Week's Minutes: 0.00
+Last Updated: 2025-12-15T08:57:42.165688
+==================================================
+
+2025-12-15 12:27:42,947 - INFO - Usage stats updated: Processed: 0.00 minutes | Est. Cost: $0.00
+2025-12-15 12:27:52,913 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:27:55,983 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2025-12-15 12:27:55,987 - INFO - Tracked 0.0833 minutes (success=False). Total: 0.08 minutes
+2025-12-15 12:27:55,987 - WARNING - Unexpected Whisper error: APIError.__init__() missing 1 required positional argument: 'request'
+2025-12-15 12:27:55,988 - INFO - Falling back to Google Speech Recognition...
+2025-12-15 12:27:55,988 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-15 12:27:57,249 - INFO - Google: Could not understand audio
+2025-12-15 12:27:58,303 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:28:00,039 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2025-12-15 12:28:00,045 - INFO - Tracked 0.0833 minutes (success=False). Total: 0.17 minutes
+2025-12-15 12:28:00,049 - WARNING - Unexpected Whisper error: APIError.__init__() missing 1 required positional argument: 'request'
+2025-12-15 12:28:00,060 - INFO - Falling back to Google Speech Recognition...
+2025-12-15 12:28:00,062 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-15 12:28:01,489 - INFO - Service status updated: Google (Fallback)
+2025-12-15 12:28:01,534 - INFO - Usage stats updated: Processed: 0.17 minutes | Est. Cost: $0.00
+2025-12-15 12:28:03,698 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:28:06,585 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2025-12-15 12:28:06,588 - INFO - Tracked 0.0833 minutes (success=False). Total: 0.25 minutes
+2025-12-15 12:28:06,588 - WARNING - Unexpected Whisper error: APIError.__init__() missing 1 required positional argument: 'request'
+2025-12-15 12:28:06,589 - INFO - Falling back to Google Speech Recognition...
+2025-12-15 12:28:06,589 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-15 12:28:07,566 - INFO - Google: Could not understand audio
+2025-12-15 12:28:09,103 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:28:10,853 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2025-12-15 12:28:10,855 - INFO - Tracked 0.0833 minutes (success=False). Total: 0.33 minutes
+2025-12-15 12:28:10,855 - WARNING - Unexpected Whisper error: APIError.__init__() missing 1 required positional argument: 'request'
+2025-12-15 12:28:10,855 - INFO - Falling back to Google Speech Recognition...
+2025-12-15 12:28:10,855 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-15 12:28:12,065 - INFO - Google: Could not understand audio
+2025-12-15 12:28:13,816 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 0.33
+Estimated Cost: $0.00
+Successful Minutes: 0.00
+Failed Attempts: 4
+Today's Minutes: 0.33
+This Week's Minutes: 0.33
+Last Updated: 2025-12-15T08:58:10.854422
+==================================================
+
+2025-12-15 12:31:24,944 - INFO - Usage tracker initialized
+2025-12-15 12:31:25,597 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 0.33
+Estimated Cost: $0.00
+Successful Minutes: 0.00
+Failed Attempts: 4
+Today's Minutes: 0.33
+This Week's Minutes: 0.33
+Last Updated: 2025-12-15T08:58:10.854422
+==================================================
+
+2025-12-15 12:31:25,598 - INFO - Usage stats updated: Processed: 0.33 minutes | Est. Cost: $0.00
+2025-12-15 12:31:32,402 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:31:34,412 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2025-12-15 12:31:34,415 - INFO - Tracked 0.0833 minutes (success=False). Total: 0.42 minutes
+2025-12-15 12:31:34,415 - ERROR - OpenAI API error occurred. Details: Error code: 400 - {'error': {'message': "Unrecognized file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}
+2025-12-15 12:31:34,416 - WARNING - Whisper API error: Error code: 400 - {'error': {'message': "Unrecognized file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}
+2025-12-15 12:31:34,416 - INFO - Falling back to Google Speech Recognition...
+2025-12-15 12:31:34,417 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-15 12:31:35,565 - INFO - Google: Could not understand audio
+2025-12-15 12:31:37,692 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:31:38,825 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2025-12-15 12:31:38,827 - INFO - Tracked 0.0833 minutes (success=False). Total: 0.50 minutes
+2025-12-15 12:31:38,828 - ERROR - OpenAI API error occurred. Details: Error code: 400 - {'error': {'message': "Unrecognized file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}
+2025-12-15 12:31:38,828 - WARNING - Whisper API error: Error code: 400 - {'error': {'message': "Unrecognized file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}
+2025-12-15 12:31:38,828 - INFO - Falling back to Google Speech Recognition...
+2025-12-15 12:31:38,828 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-15 12:31:40,398 - INFO - Google: Could not understand audio
+2025-12-15 12:31:42,940 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:31:43,884 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 400 Bad Request"
+2025-12-15 12:31:43,887 - INFO - Tracked 0.0833 minutes (success=False). Total: 0.58 minutes
+2025-12-15 12:31:43,888 - ERROR - OpenAI API error occurred. Details: Error code: 400 - {'error': {'message': "Unrecognized file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}
+2025-12-15 12:31:43,888 - WARNING - Whisper API error: Error code: 400 - {'error': {'message': "Unrecognized file format. Supported formats: ['flac', 'm4a', 'mp3', 'mp4', 'mpeg', 'mpga', 'oga', 'ogg', 'wav', 'webm']", 'type': 'invalid_request_error', 'param': None, 'code': None}, 'usage': {'type': 'duration', 'seconds': 0}}
+2025-12-15 12:31:43,888 - INFO - Falling back to Google Speech Recognition...
+2025-12-15 12:31:43,888 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-15 12:31:44,957 - INFO - Google: Could not understand audio
+2025-12-15 12:31:45,719 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 0.58
+Estimated Cost: $0.00
+Successful Minutes: 0.00
+Failed Attempts: 7
+Today's Minutes: 0.58
+This Week's Minutes: 0.58
+Last Updated: 2025-12-15T09:01:43.886927
+==================================================
+
+2025-12-15 12:33:07,911 - INFO - Usage tracker initialized
+2025-12-15 12:33:08,534 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 0.58
+Estimated Cost: $0.00
+Successful Minutes: 0.00
+Failed Attempts: 7
+Today's Minutes: 0.58
+This Week's Minutes: 0.58
+Last Updated: 2025-12-15T09:01:43.886927
+==================================================
+
+2025-12-15 12:33:08,535 - INFO - Usage stats updated: Processed: 0.58 minutes | Est. Cost: $0.00
+2025-12-15 12:33:15,260 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:33:18,578 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 12:33:18,583 - INFO - Tracked 0.0833 minutes (success=True). Total: 0.67 minutes
+2025-12-15 12:33:18,584 - INFO - Usage tracked - Total: 0.67 min, Cost: $0.00, Daily: 0.67 min
+2025-12-15 12:33:18,584 - INFO - ✓ Whisper API successful: 'PYM JBZ...'
+2025-12-15 12:33:18,585 - INFO - Transcription result: [Whisper API] PYM JBZ
+2025-12-15 12:33:18,585 - INFO - Service status updated: Whisper API
+2025-12-15 12:33:18,592 - INFO - Usage stats updated: Processed: 0.67 minutes | Est. Cost: $0.00
+2025-12-15 12:33:20,582 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:33:21,507 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 0.67
+Estimated Cost: $0.00
+Successful Minutes: 0.08
+Failed Attempts: 7
+Today's Minutes: 0.67
+This Week's Minutes: 0.67
+Last Updated: 2025-12-15T09:03:18.582897
+==================================================
+
+2025-12-15 12:33:22,994 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 12:33:22,996 - INFO - Tracked 0.0833 minutes (success=True). Total: 0.75 minutes
+2025-12-15 12:33:22,996 - INFO - Usage tracked - Total: 0.75 min, Cost: $0.00, Daily: 0.75 min
+2025-12-15 12:33:22,996 - INFO - ✓ Whisper API successful: 'PYM JBZ...'
+2025-12-15 12:33:22,997 - INFO - Transcription result: [Whisper API] PYM JBZ
+2025-12-15 12:33:22,997 - INFO - Service status updated: Whisper API
+2025-12-15 12:33:23,001 - INFO - Usage stats updated: Processed: 0.75 minutes | Est. Cost: $0.00
+2025-12-15 12:34:12,423 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:34:19,406 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 12:34:19,455 - INFO - Tracked 0.0833 minutes (success=True). Total: 0.83 minutes
+2025-12-15 12:34:19,455 - INFO - Usage tracked - Total: 0.83 min, Cost: $0.01, Daily: 0.83 min
+2025-12-15 12:34:19,455 - INFO - ✓ Whisper API successful: 'نمي تواند رو برج مردم...'
+2025-12-15 12:34:19,456 - INFO - Transcription result: [Whisper API] نمي تواند رو برج مردم
+2025-12-15 12:34:19,456 - INFO - Service status updated: Whisper API
+2025-12-15 12:34:19,465 - INFO - Usage stats updated: Processed: 0.83 minutes | Est. Cost: $0.01
+2025-12-15 12:34:19,469 - INFO - Attempting transcription with Whisper API...
+2025-12-15 12:34:21,696 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 12:34:21,698 - INFO - Tracked 0.0833 minutes (success=True). Total: 0.92 minutes
+2025-12-15 12:34:21,698 - INFO - Usage tracked - Total: 0.92 min, Cost: $0.01, Daily: 0.92 min
+2025-12-15 12:34:21,698 - INFO - ✓ Whisper API successful: 'این ها رو نایست میبینیده...'
+2025-12-15 12:34:21,698 - INFO - Transcription result: [Whisper API] این ها رو نایست میبینیده
+2025-12-15 12:34:21,699 - INFO - Service status updated: Whisper API
+2025-12-15 12:34:21,708 - INFO - Usage stats updated: Processed: 0.92 minutes | Est. Cost: $0.01
+2025-12-15 12:34:21,957 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 0.92
+Estimated Cost: $0.01
+Successful Minutes: 0.33
+Failed Attempts: 7
+Today's Minutes: 0.92
+This Week's Minutes: 0.92
+Last Updated: 2025-12-15T09:04:21.697350
+==================================================
+
+2025-12-15 13:54:21,133 - INFO - Attempting transcription with Whisper API...
+2025-12-15 13:54:23,565 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 0.92
+Estimated Cost: $0.01
+Successful Minutes: 0.33
+Failed Attempts: 7
+Today's Minutes: 0.92
+This Week's Minutes: 0.92
+Last Updated: 2025-12-15T09:04:21.697350
+==================================================
+
+2025-12-15 13:54:25,248 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 13:54:25,251 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.00 minutes
+2025-12-15 13:54:25,252 - INFO - Usage tracked - Total: 1.00 min, Cost: $0.01, Daily: 1.00 min
+2025-12-15 13:54:25,252 - INFO - ✓ Whisper API successful: 'PYM JBZ...'
+2025-12-15 13:54:25,252 - INFO - Transcription result: [Whisper API] PYM JBZ
+2025-12-15 13:54:25,252 - INFO - Service status updated: Whisper API
+2025-12-15 13:54:25,256 - INFO - Usage stats updated: Processed: 1.00 minutes | Est. Cost: $0.01
+2025-12-15 15:09:09,406 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:09:15,028 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:09:15,031 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.08 minutes
+2025-12-15 15:09:15,032 - INFO - Usage tracked - Total: 1.08 min, Cost: $0.01, Daily: 1.08 min
+2025-12-15 15:09:15,032 - INFO - ✓ Whisper API successful: 'PYM JBZ...'
+2025-12-15 15:09:15,032 - INFO - Transcription result: [Whisper API] PYM JBZ
+2025-12-15 15:09:15,033 - INFO - Service status updated: Whisper API
+2025-12-15 15:09:15,039 - INFO - Usage stats updated: Processed: 1.08 minutes | Est. Cost: $0.01
+2025-12-15 15:09:15,039 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:09:17,050 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:09:17,053 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.17 minutes
+2025-12-15 15:09:17,054 - INFO - Usage tracked - Total: 1.17 min, Cost: $0.01, Daily: 1.17 min
+2025-12-15 15:09:17,054 - INFO - ✓ Whisper API successful: 'مرضی شما چطور است؟...'
+2025-12-15 15:09:17,055 - INFO - Transcription result: [Whisper API] مرضی شما چطور است؟
+2025-12-15 15:09:17,055 - INFO - Service status updated: Whisper API
+2025-12-15 15:09:17,061 - INFO - Usage stats updated: Processed: 1.17 minutes | Est. Cost: $0.01
+2025-12-15 15:09:19,471 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 1.17
+Estimated Cost: $0.01
+Successful Minutes: 0.58
+Failed Attempts: 7
+Today's Minutes: 1.17
+This Week's Minutes: 1.17
+Last Updated: 2025-12-15T11:39:17.051734
+==================================================
+
+2025-12-15 15:09:20,076 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:09:21,723 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:09:21,726 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.25 minutes
+2025-12-15 15:09:21,727 - INFO - Usage tracked - Total: 1.25 min, Cost: $0.01, Daily: 1.25 min
+2025-12-15 15:09:21,727 - INFO - ✓ Whisper API successful: 'PYM JBZ...'
+2025-12-15 15:09:21,727 - INFO - Transcription result: [Whisper API] PYM JBZ
+2025-12-15 15:09:21,727 - INFO - Service status updated: Whisper API
+2025-12-15 15:09:21,731 - INFO - Usage stats updated: Processed: 1.25 minutes | Est. Cost: $0.01
+2025-12-15 15:09:26,708 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:09:28,913 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:09:28,918 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.33 minutes
+2025-12-15 15:09:28,918 - INFO - Usage tracked - Total: 1.33 min, Cost: $0.01, Daily: 1.33 min
+2025-12-15 15:09:28,919 - INFO - ✓ Whisper API successful: 'سلام، حالا شما چطوره؟...'
+2025-12-15 15:09:28,920 - INFO - Transcription result: [Whisper API] سلام، حالا شما چطوره؟
+2025-12-15 15:09:28,920 - INFO - Service status updated: Whisper API
+2025-12-15 15:09:28,939 - INFO - Usage stats updated: Processed: 1.33 minutes | Est. Cost: $0.01
+2025-12-15 15:09:30,649 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 1.33
+Estimated Cost: $0.01
+Successful Minutes: 0.75
+Failed Attempts: 7
+Today's Minutes: 1.33
+This Week's Minutes: 1.33
+Last Updated: 2025-12-15T11:39:28.916052
+==================================================
+
+2025-12-15 15:10:01,995 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:10:08,892 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:10:08,897 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.42 minutes
+2025-12-15 15:10:08,898 - INFO - Usage tracked - Total: 1.42 min, Cost: $0.01, Daily: 1.42 min
+2025-12-15 15:10:08,898 - INFO - ✓ Whisper API successful: 'اگر حضور اکرم که یکی از muffinها است....'
+2025-12-15 15:10:08,899 - INFO - Transcription result: [Whisper API] اگر حضور اکرم که یکی از muffinها است.
+2025-12-15 15:10:08,901 - INFO - Service status updated: Whisper API
+2025-12-15 15:10:08,909 - INFO - Usage stats updated: Processed: 1.42 minutes | Est. Cost: $0.01
+2025-12-15 15:10:08,909 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:10:16,687 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:10:16,692 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.50 minutes
+2025-12-15 15:10:16,693 - INFO - Usage tracked - Total: 1.50 min, Cost: $0.01, Daily: 1.50 min
+2025-12-15 15:10:16,693 - INFO - ✓ Whisper API successful: 'سلام، حال شما چطوره؟ این یک تست برای این که ببینید...'
+2025-12-15 15:10:16,695 - INFO - Transcription result: [Whisper API] سلام، حال شما چطوره؟ این یک تست برای این که ببینید.
+2025-12-15 15:10:16,695 - INFO - Service status updated: Whisper API
+2025-12-15 15:10:16,704 - INFO - Usage stats updated: Processed: 1.50 minutes | Est. Cost: $0.01
+2025-12-15 15:10:16,713 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:10:19,038 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:10:19,043 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.58 minutes
+2025-12-15 15:10:19,043 - INFO - Usage tracked - Total: 1.58 min, Cost: $0.01, Daily: 1.58 min
+2025-12-15 15:10:19,043 - INFO - ✓ Whisper API successful: 'ببینیم کدوم مودل بهتر کار میکنه....'
+2025-12-15 15:10:19,045 - INFO - Transcription result: [Whisper API] ببینیم کدوم مودل بهتر کار میکنه.
+2025-12-15 15:10:19,045 - INFO - Service status updated: Whisper API
+2025-12-15 15:10:19,051 - INFO - Usage stats updated: Processed: 1.58 minutes | Est. Cost: $0.01
+2025-12-15 15:10:19,051 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:10:21,150 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 1.58
+Estimated Cost: $0.01
+Successful Minutes: 1.00
+Failed Attempts: 7
+Today's Minutes: 1.58
+This Week's Minutes: 1.58
+Last Updated: 2025-12-15T11:40:19.041476
+==================================================
+
+2025-12-15 15:10:29,952 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:10:29,958 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.67 minutes
+2025-12-15 15:10:29,958 - INFO - Usage tracked - Total: 1.67 min, Cost: $0.01, Daily: 1.67 min
+2025-12-15 15:10:29,958 - INFO - ✓ Whisper API successful: 'از این توضیح احساس ساز جیدی haunted in Shia,...'
+2025-12-15 15:10:29,959 - INFO - Transcription result: [Whisper API] از این توضیح احساس ساز جیدی haunted in Shia,
+2025-12-15 15:10:29,960 - INFO - Service status updated: Whisper API
+2025-12-15 15:10:29,967 - INFO - Usage stats updated: Processed: 1.67 minutes | Est. Cost: $0.01
+2025-12-15 15:19:16,811 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:19:30,203 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:19:30,207 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.75 minutes
+2025-12-15 15:19:30,207 - INFO - Usage tracked - Total: 1.75 min, Cost: $0.01, Daily: 1.75 min
+2025-12-15 15:19:30,207 - INFO - ✓ Whisper API successful: 'PYM JBZ...'
+2025-12-15 15:19:30,208 - INFO - Transcription result: [Whisper API] PYM JBZ
+2025-12-15 15:19:30,208 - INFO - Service status updated: Whisper API
+2025-12-15 15:19:30,210 - INFO - Usage stats updated: Processed: 1.75 minutes | Est. Cost: $0.01
+2025-12-15 15:19:30,211 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:19:33,487 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:19:33,490 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.83 minutes
+2025-12-15 15:19:33,490 - INFO - Usage tracked - Total: 1.83 min, Cost: $0.01, Daily: 1.83 min
+2025-12-15 15:19:33,490 - INFO - ✓ Whisper API successful: 'سلام، حل شما چطوره؟ این یک تست برای اینه که ببینیم...'
+2025-12-15 15:19:33,491 - INFO - Transcription result: [Whisper API] سلام، حل شما چطوره؟ این یک تست برای اینه که ببینیم
+2025-12-15 15:19:33,491 - INFO - Service status updated: Whisper API
+2025-12-15 15:19:33,495 - INFO - Usage stats updated: Processed: 1.83 minutes | Est. Cost: $0.01
+2025-12-15 15:19:33,495 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:19:36,207 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:19:36,210 - INFO - Tracked 0.0833 minutes (success=True). Total: 1.92 minutes
+2025-12-15 15:19:36,211 - INFO - Usage tracked - Total: 1.92 min, Cost: $0.01, Daily: 1.92 min
+2025-12-15 15:19:36,211 - INFO - ✓ Whisper API successful: 'کدوم API یا مودل بهتر برامون کار میکنه؟...'
+2025-12-15 15:19:36,211 - INFO - Transcription result: [Whisper API] کدوم API یا مودل بهتر برامون کار میکنه؟
+2025-12-15 15:19:36,211 - INFO - Service status updated: Whisper API
+2025-12-15 15:19:36,214 - INFO - Usage stats updated: Processed: 1.92 minutes | Est. Cost: $0.01
+2025-12-15 15:19:36,214 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:19:38,485 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 1.92
+Estimated Cost: $0.01
+Successful Minutes: 1.33
+Failed Attempts: 7
+Today's Minutes: 1.92
+This Week's Minutes: 1.92
+Last Updated: 2025-12-15T11:49:36.209094
+==================================================
+
+2025-12-15 15:19:38,707 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:19:38,709 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.00 minutes
+2025-12-15 15:19:38,709 - INFO - Usage tracked - Total: 2.00 min, Cost: $0.01, Daily: 2.00 min
+2025-12-15 15:19:38,710 - INFO - ✓ Whisper API successful: 'PYM JBZ...'
+2025-12-15 15:19:38,710 - INFO - Transcription result: [Whisper API] PYM JBZ
+2025-12-15 15:19:38,710 - INFO - Service status updated: Whisper API
+2025-12-15 15:19:38,713 - INFO - Usage stats updated: Processed: 2.00 minutes | Est. Cost: $0.01
+2025-12-15 15:20:32,255 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:20:40,391 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:20:40,394 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.08 minutes
+2025-12-15 15:20:40,394 - INFO - Usage tracked - Total: 2.08 min, Cost: $0.01, Daily: 2.08 min
+2025-12-15 15:20:40,394 - INFO - ✓ Whisper API successful: '...'
+2025-12-15 15:20:40,395 - INFO - Service status updated: Whisper API
+2025-12-15 15:20:40,396 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:20:43,202 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:20:43,209 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.17 minutes
+2025-12-15 15:20:43,209 - INFO - Usage tracked - Total: 2.17 min, Cost: $0.01, Daily: 2.17 min
+2025-12-15 15:20:43,210 - INFO - ✓ Whisper API successful: 'PYM JBZ...'
+2025-12-15 15:20:43,210 - INFO - Transcription result: [Whisper API] PYM JBZ
+2025-12-15 15:20:43,212 - INFO - Service status updated: Whisper API
+2025-12-15 15:20:43,221 - INFO - Usage stats updated: Processed: 2.17 minutes | Est. Cost: $0.01
+2025-12-15 15:20:43,225 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:20:45,871 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:20:45,876 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.25 minutes
+2025-12-15 15:20:45,876 - INFO - Usage tracked - Total: 2.25 min, Cost: $0.01, Daily: 2.25 min
+2025-12-15 15:20:45,876 - INFO - ✓ Whisper API successful: 'های اگهان...'
+2025-12-15 15:20:45,877 - INFO - Transcription result: [Whisper API] های اگهان
+2025-12-15 15:20:45,877 - INFO - Service status updated: Whisper API
+2025-12-15 15:20:45,890 - INFO - Usage stats updated: Processed: 2.25 minutes | Est. Cost: $0.01
+2025-12-15 15:20:45,891 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:20:52,079 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:20:52,082 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.33 minutes
+2025-12-15 15:20:52,082 - INFO - Usage tracked - Total: 2.33 min, Cost: $0.01, Daily: 2.33 min
+2025-12-15 15:20:52,083 - INFO - ✓ Whisper API successful: '...'
+2025-12-15 15:20:52,083 - INFO - Service status updated: Whisper API
+2025-12-15 15:20:52,084 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:21:00,443 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:21:00,446 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.42 minutes
+2025-12-15 15:21:00,447 - INFO - Usage tracked - Total: 2.42 min, Cost: $0.01, Daily: 2.42 min
+2025-12-15 15:21:00,447 - INFO - ✓ Whisper API successful: '...'
+2025-12-15 15:21:00,448 - INFO - Service status updated: Whisper API
+2025-12-15 15:21:00,448 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:21:07,005 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:21:07,008 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.50 minutes
+2025-12-15 15:21:07,009 - INFO - Usage tracked - Total: 2.50 min, Cost: $0.01, Daily: 2.50 min
+2025-12-15 15:21:07,009 - INFO - ✓ Whisper API successful: 'So What are you doing؟...'
+2025-12-15 15:21:07,009 - INFO - Transcription result: [Whisper API] So What are you doing؟
+2025-12-15 15:21:07,010 - INFO - Service status updated: Whisper API
+2025-12-15 15:21:07,022 - INFO - Usage stats updated: Processed: 2.50 minutes | Est. Cost: $0.01
+2025-12-15 15:21:07,023 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:21:08,860 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:21:08,865 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.58 minutes
+2025-12-15 15:21:08,866 - INFO - Usage tracked - Total: 2.58 min, Cost: $0.02, Daily: 2.58 min
+2025-12-15 15:21:08,866 - INFO - ✓ Whisper API successful: 'I think whisper is sensitive to letter....'
+2025-12-15 15:21:08,867 - INFO - Transcription result: [Whisper API] I think whisper is sensitive to letter.
+2025-12-15 15:21:08,868 - INFO - Service status updated: Whisper API
+2025-12-15 15:21:08,899 - INFO - Usage stats updated: Processed: 2.58 minutes | Est. Cost: $0.02
+2025-12-15 15:21:08,899 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:21:10,690 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:21:10,694 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.67 minutes
+2025-12-15 15:21:10,695 - INFO - Usage tracked - Total: 2.67 min, Cost: $0.02, Daily: 2.67 min
+2025-12-15 15:21:10,695 - INFO - ✓ Whisper API successful: 'اگر می کنم مثالاً من ام...'
+2025-12-15 15:21:10,695 - INFO - Transcription result: [Whisper API] اگر می کنم مثالاً من ام
+2025-12-15 15:21:10,696 - INFO - Service status updated: Whisper API
+2025-12-15 15:21:10,701 - INFO - Usage stats updated: Processed: 2.67 minutes | Est. Cost: $0.02
+2025-12-15 15:21:10,706 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:21:15,271 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:21:15,273 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.75 minutes
+2025-12-15 15:21:15,273 - INFO - Usage tracked - Total: 2.75 min, Cost: $0.02, Daily: 2.75 min
+2025-12-15 15:21:15,273 - INFO - ✓ Whisper API successful: 'امتحان کنید....'
+2025-12-15 15:21:15,274 - INFO - Transcription result: [Whisper API] امتحان کنید.
+2025-12-15 15:21:15,274 - INFO - Service status updated: Whisper API
+2025-12-15 15:21:15,278 - INFO - Usage stats updated: Processed: 2.75 minutes | Est. Cost: $0.02
+2025-12-15 15:21:15,279 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:21:18,974 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:21:18,976 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.83 minutes
+2025-12-15 15:21:18,977 - INFO - Usage tracked - Total: 2.83 min, Cost: $0.02, Daily: 2.83 min
+2025-12-15 15:21:18,977 - INFO - ✓ Whisper API successful: 'در اینجا نمی کنید، در اینجا نمی کنید، در اینجا نمی...'
+2025-12-15 15:21:18,978 - INFO - Transcription result: [Whisper API] در اینجا نمی کنید، در اینجا نمی کنید، در اینجا نمی کنید
+2025-12-15 15:21:18,978 - INFO - Service status updated: Whisper API
+2025-12-15 15:21:18,984 - INFO - Usage stats updated: Processed: 2.83 minutes | Est. Cost: $0.02
+2025-12-15 15:21:18,984 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:21:23,916 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 2.83
+Estimated Cost: $0.02
+Successful Minutes: 2.25
+Failed Attempts: 7
+Today's Minutes: 2.83
+This Week's Minutes: 2.83
+Last Updated: 2025-12-15T11:51:18.975806
+==================================================
+
+2025-12-15 15:21:24,577 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:21:24,581 - INFO - Tracked 0.0833 minutes (success=True). Total: 2.92 minutes
+2025-12-15 15:21:24,582 - INFO - Usage tracked - Total: 2.92 min, Cost: $0.02, Daily: 2.92 min
+2025-12-15 15:21:24,582 - INFO - ✓ Whisper API successful: '...'
+2025-12-15 15:21:24,583 - INFO - Service status updated: Whisper API
+2025-12-15 15:21:54,708 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:22:02,449 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:22:02,454 - INFO - Tracked 0.0833 minutes (success=True). Total: 3.00 minutes
+2025-12-15 15:22:02,455 - INFO - Usage tracked - Total: 3.00 min, Cost: $0.02, Daily: 3.00 min
+2025-12-15 15:22:02,455 - INFO - ✓ Whisper API successful: 'امتحان می بايد مرسیدی چلیف خشک کیdayez است ....'
+2025-12-15 15:22:02,456 - INFO - Transcription result: [Whisper API] امتحان می بايد مرسیدی چلیف خشک کیdayez است .
+2025-12-15 15:22:02,457 - INFO - Service status updated: Whisper API
+2025-12-15 15:22:02,473 - INFO - Usage stats updated: Processed: 3.00 minutes | Est. Cost: $0.02
+2025-12-15 15:22:02,473 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:22:08,346 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:22:08,349 - INFO - Tracked 0.0833 minutes (success=True). Total: 3.08 minutes
+2025-12-15 15:22:08,349 - INFO - Usage tracked - Total: 3.08 min, Cost: $0.02, Daily: 3.08 min
+2025-12-15 15:22:08,350 - INFO - ✓ Whisper API successful: '...'
+2025-12-15 15:22:08,350 - INFO - Service status updated: Whisper API
+2025-12-15 15:22:08,351 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:22:10,513 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:22:10,516 - INFO - Tracked 0.0833 minutes (success=True). Total: 3.17 minutes
+2025-12-15 15:22:10,516 - INFO - Usage tracked - Total: 3.17 min, Cost: $0.02, Daily: 3.17 min
+2025-12-15 15:22:10,516 - INFO - ✓ Whisper API successful: 'A, B, C, D...'
+2025-12-15 15:22:10,517 - INFO - Transcription result: [Whisper API] A, B, C, D
+2025-12-15 15:22:10,518 - INFO - Service status updated: Whisper API
+2025-12-15 15:22:10,524 - INFO - Usage stats updated: Processed: 3.17 minutes | Est. Cost: $0.02
+2025-12-15 15:22:10,525 - INFO - Attempting transcription with Whisper API...
+2025-12-15 15:22:12,804 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.17
+Estimated Cost: $0.02
+Successful Minutes: 2.58
+Failed Attempts: 7
+Today's Minutes: 3.17
+This Week's Minutes: 3.17
+Last Updated: 2025-12-15T11:52:10.514928
+==================================================
+
+2025-12-15 15:22:18,771 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-15 15:22:18,773 - INFO - Tracked 0.0833 minutes (success=True). Total: 3.25 minutes
+2025-12-15 15:22:18,774 - INFO - Usage tracked - Total: 3.25 min, Cost: $0.02, Daily: 3.25 min
+2025-12-15 15:22:18,775 - INFO - ✓ Whisper API successful: '...'
+2025-12-15 15:22:18,775 - INFO - Service status updated: Whisper API
+2025-12-17 18:00:12,642 - INFO - Usage tracker initialized
+2025-12-17 18:00:13,490 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.25
+Estimated Cost: $0.02
+Successful Minutes: 2.67
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.25
+Last Updated: 2025-12-15T11:52:18.772815
+==================================================
+
+2025-12-17 18:00:13,491 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:00:21,499 - INFO - Audio queued - Energy: 343
+2025-12-17 18:00:21,500 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:00:21,503 - INFO - Audio energy too low (343), skipping transcription
+2025-12-17 18:00:21,503 - WARNING - Whisper audio format error: Audio contains mostly silence
+2025-12-17 18:00:21,503 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 18:00:21,503 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 18:00:22,828 - INFO - ✓ Google API successful: 'سلام چطوری این...'
+2025-12-17 18:00:22,829 - INFO - Transcription result: [Google (Fallback)] سلام چطوری این
+2025-12-17 18:00:22,837 - INFO - Service status updated: Google (Fallback)
+2025-12-17 18:00:22,853 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:00:37,424 - INFO - Audio queued - Energy: 356
+2025-12-17 18:00:37,424 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:00:37,425 - INFO - Audio energy too low (356), skipping transcription
+2025-12-17 18:00:37,426 - WARNING - Whisper audio format error: Audio contains mostly silence
+2025-12-17 18:00:37,426 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 18:00:37,426 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 18:00:38,723 - INFO - ✓ Google API successful: 'منظورت چیه...'
+2025-12-17 18:00:38,723 - INFO - Transcription result: [Google (Fallback)] منظورت چیه
+2025-12-17 18:00:38,724 - INFO - Service status updated: Google (Fallback)
+2025-12-17 18:00:38,730 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:00:48,004 - INFO - Audio queued - Energy: 635
+2025-12-17 18:00:48,004 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:00:48,006 - INFO - Audio energy too low (635), skipping transcription
+2025-12-17 18:00:48,006 - WARNING - Whisper audio format error: Audio contains mostly silence
+2025-12-17 18:00:48,006 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 18:00:48,006 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 18:00:49,308 - INFO - ✓ Google API successful: 'تست برای اینه که اصلاً ببینم...'
+2025-12-17 18:00:49,309 - INFO - Transcription result: [Google (Fallback)] تست برای اینه که اصلاً ببینم
+2025-12-17 18:00:49,310 - INFO - Service status updated: Google (Fallback)
+2025-12-17 18:00:49,316 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:00:53,311 - INFO - Audio queued - Energy: 635
+2025-12-17 18:00:53,311 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:00:53,312 - INFO - Audio energy too low (635), skipping transcription
+2025-12-17 18:00:53,313 - WARNING - Whisper audio format error: Audio contains mostly silence
+2025-12-17 18:00:53,313 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 18:00:53,313 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 18:00:54,497 - INFO - ✓ Google API successful: 'تو الان ای پی آی گوگلی...'
+2025-12-17 18:00:54,498 - INFO - Transcription result: [Google (Fallback)] تو الان ای پی آی گوگلی
+2025-12-17 18:00:54,498 - INFO - Service status updated: Google (Fallback)
+2025-12-17 18:00:54,506 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:01:03,949 - INFO - Audio queued - Energy: 575
+2025-12-17 18:01:03,949 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:01:03,950 - INFO - Audio energy too low (575), skipping transcription
+2025-12-17 18:01:03,950 - WARNING - Whisper audio format error: Audio contains mostly silence
+2025-12-17 18:01:03,950 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 18:01:03,951 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 18:01:05,124 - INFO - ✓ Google API successful: 'بابا چرا منو اذیت...'
+2025-12-17 18:01:05,124 - INFO - Transcription result: [Google (Fallback)] بابا چرا منو اذیت
+2025-12-17 18:01:05,126 - INFO - Service status updated: Google (Fallback)
+2025-12-17 18:01:05,138 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:01:19,999 - INFO - Audio queued - Energy: 372
+2025-12-17 18:01:20,000 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:01:20,000 - INFO - Audio energy too low (372), skipping transcription
+2025-12-17 18:01:20,000 - WARNING - Whisper audio format error: Audio contains mostly silence
+2025-12-17 18:01:20,001 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 18:01:20,001 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 18:01:21,042 - INFO - ✓ Google API successful: 'رادی...'
+2025-12-17 18:01:21,042 - INFO - Transcription result: [Google (Fallback)] رادی
+2025-12-17 18:01:21,043 - INFO - Service status updated: Google (Fallback)
+2025-12-17 18:01:21,048 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:01:25,288 - INFO - Audio queued - Energy: 399
+2025-12-17 18:01:25,288 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:01:25,289 - INFO - Audio energy too low (399), skipping transcription
+2025-12-17 18:01:25,289 - WARNING - Whisper audio format error: Audio contains mostly silence
+2025-12-17 18:01:25,289 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 18:01:25,289 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 18:01:26,523 - INFO - ✓ Google API successful: 'بقیه‌اش نرمال...'
+2025-12-17 18:01:26,524 - INFO - Transcription result: [Google (Fallback)] بقیه‌اش نرمال
+2025-12-17 18:01:26,524 - INFO - Service status updated: Google (Fallback)
+2025-12-17 18:01:26,535 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:01:28,859 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.25
+Estimated Cost: $0.02
+Successful Minutes: 2.67
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.25
+Last Updated: 2025-12-15T11:52:18.772815
+==================================================
+
+2025-12-17 18:31:30,178 - INFO - Usage tracker initialized
+2025-12-17 18:31:37,629 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.25
+Estimated Cost: $0.02
+Successful Minutes: 2.67
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.25
+Last Updated: 2025-12-15T11:52:18.772815
+==================================================
+
+2025-12-17 18:31:37,876 - INFO - Usage stats updated: Processed: 3.25 minutes | Est. Cost: $0.02
+2025-12-17 18:32:03,480 - INFO - Audio queued - Energy: 713
+2025-12-17 18:32:03,482 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:32:03,489 - INFO - Audio quality check passed - Energy: 713, ZCR: 0.175
+2025-12-17 18:32:09,118 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-17 18:32:09,127 - INFO - Tracked 0.0833 minutes (success=True). Total: 3.33 minutes
+2025-12-17 18:32:09,129 - INFO - ✓ Valid transcription: 'درست کنید؟ خوبی؟ خوبی؟...' | Total: 3.33 min, Cost: $0.02
+2025-12-17 18:32:09,129 - INFO - ✓ Whisper API successful: 'درست کنید؟ خوبی؟ خوبی؟...'
+2025-12-17 18:32:09,131 - INFO - Transcription result: [Whisper API] درست کنید؟ خوبی؟ خوبی؟
+2025-12-17 18:32:09,131 - INFO - Service status updated: Whisper API
+2025-12-17 18:32:09,164 - INFO - Usage stats updated: Processed: 3.33 minutes | Est. Cost: $0.02
+2025-12-17 18:32:09,771 - INFO - Audio queued - Energy: 344
+2025-12-17 18:32:09,772 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:32:09,775 - INFO - Audio quality check passed - Energy: 344, ZCR: 0.195
+2025-12-17 18:32:11,837 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-17 18:32:11,843 - INFO - Tracked 0.0833 minutes (success=True). Total: 3.42 minutes
+2025-12-17 18:32:11,844 - INFO - ✓ Valid transcription: 'خیلی خوش آمدید...' | Total: 3.42 min, Cost: $0.02
+2025-12-17 18:32:11,845 - INFO - ✓ Whisper API successful: 'خیلی خوش آمدید...'
+2025-12-17 18:32:11,847 - INFO - Transcription result: [Whisper API] خیلی خوش آمدید
+2025-12-17 18:32:11,849 - INFO - Service status updated: Whisper API
+2025-12-17 18:32:11,853 - INFO - Usage stats updated: Processed: 3.42 minutes | Est. Cost: $0.02
+2025-12-17 18:32:17,894 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.42
+Estimated Cost: $0.02
+Successful Minutes: 2.83
+Failed Attempts: 7
+Today's Minutes: 0.17
+This Week's Minutes: 3.42
+Last Updated: 2025-12-17T15:02:11.840590
+==================================================
+
+2025-12-17 18:32:21,529 - INFO - Audio queued - Energy: 756
+2025-12-17 18:32:26,546 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:32:26,550 - INFO - Audio quality check passed - Energy: 756, ZCR: 0.187
+2025-12-17 18:32:29,308 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-17 18:32:29,314 - INFO - Tracked 0.0833 minutes (success=True). Total: 3.50 minutes
+2025-12-17 18:32:29,315 - INFO - ✓ Valid transcription: 'خوبی؟ خوبی؟ خوبی؟...' | Total: 3.50 min, Cost: $0.02
+2025-12-17 18:32:29,316 - INFO - ✓ Whisper API successful: 'خوبی؟ خوبی؟ خوبی؟...'
+2025-12-17 18:32:29,318 - INFO - Transcription result: [Whisper API] خوبی؟ خوبی؟ خوبی؟
+2025-12-17 18:32:29,319 - INFO - Service status updated: Whisper API
+2025-12-17 18:32:29,329 - INFO - Usage stats updated: Processed: 3.50 minutes | Est. Cost: $0.02
+2025-12-17 18:32:33,155 - INFO - Audio queued - Energy: 524
+2025-12-17 18:32:33,156 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:32:33,162 - INFO - Audio quality check passed - Energy: 524, ZCR: 0.175
+2025-12-17 18:32:35,017 - INFO - HTTP Request: POST https://api.openai.com/v1/audio/transcriptions "HTTP/1.1 200 OK"
+2025-12-17 18:32:35,027 - INFO - Tracked 0.0833 minutes (success=True). Total: 3.58 minutes
+2025-12-17 18:32:35,035 - INFO - ✓ Valid transcription: 'این همه ها پشت میکنید وردن گیلیسی....' | Total: 3.58 min, Cost: $0.02
+2025-12-17 18:32:35,040 - INFO - ✓ Whisper API successful: 'این همه ها پشت میکنید وردن گیلیسی....'
+2025-12-17 18:32:35,042 - INFO - Transcription result: [Whisper API] این همه ها پشت میکنید وردن گیلیسی.
+2025-12-17 18:32:35,044 - INFO - Service status updated: Whisper API
+2025-12-17 18:32:35,094 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-17 18:32:38,155 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.33
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-17 18:32:39,902 - INFO - Audio queued - Energy: 572
+2025-12-17 18:36:36,754 - INFO - Attempting transcription with Whisper API...
+2025-12-17 18:36:36,758 - INFO - Audio quality check passed - Energy: 572, ZCR: 0.202
+2025-12-17 22:18:33,582 - INFO - Usage tracker initialized
+2025-12-17 22:18:34,339 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.33
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-17 22:18:34,340 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-17 22:19:12,572 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.33
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-17 22:33:10,176 - INFO - Usage tracker initialized
+2025-12-17 22:33:10,875 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.33
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-17 22:33:10,876 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-17 22:33:17,667 - INFO - Audio queued - Energy: 333
+2025-12-17 22:33:17,668 - INFO - Attempting transcription with Whisper API...
+2025-12-17 22:33:17,671 - INFO - Audio energy (333) - Using Google API for optimal quality
+2025-12-17 22:33:17,671 - WARNING - Whisper audio format error: Audio quality better suited for Google Speech Recognition
+2025-12-17 22:33:17,671 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 22:33:17,672 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 22:33:21,122 - INFO - ✓ Google API successful: 'بهتری و رایگانی...'
+2025-12-17 22:33:21,123 - INFO - Transcription result: [Google Speech] بهتری و رایگانی
+2025-12-17 22:33:21,123 - INFO - Service status updated: Google Speech
+2025-12-17 22:33:21,136 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-17 22:33:28,317 - INFO - Audio queued - Energy: 462
+2025-12-17 22:33:28,317 - INFO - Attempting transcription with Whisper API...
+2025-12-17 22:33:28,318 - INFO - Audio energy (462) - Using Google API for optimal quality
+2025-12-17 22:33:28,318 - WARNING - Whisper audio format error: Audio quality better suited for Google Speech Recognition
+2025-12-17 22:33:28,318 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 22:33:28,319 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 22:33:30,469 - INFO - ✓ Google API successful: 'کاپیتان که حالا خوب نیستی...'
+2025-12-17 22:33:30,470 - INFO - Transcription result: [Google Speech] کاپیتان که حالا خوب نیستی
+2025-12-17 22:33:30,471 - INFO - Service status updated: Google Speech
+2025-12-17 22:33:30,481 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-17 22:33:38,909 - INFO - Audio queued - Energy: 1392
+2025-12-17 22:33:38,909 - INFO - Attempting transcription with Whisper API...
+2025-12-17 22:33:38,910 - INFO - Audio energy (1392) - Using Google API for optimal quality
+2025-12-17 22:33:38,911 - WARNING - Whisper audio format error: Audio quality better suited for Google Speech Recognition
+2025-12-17 22:33:38,911 - INFO - Falling back to Google Speech Recognition...
+2025-12-17 22:33:38,911 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-17 22:33:41,586 - INFO - ✓ Google API successful: '‏your mising many world...'
+2025-12-17 22:33:41,586 - INFO - Transcription result: [Google Speech] ‏your mising many world
+2025-12-17 22:33:41,587 - INFO - Service status updated: Google Speech
+2025-12-17 22:33:41,601 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-17 22:33:45,492 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.33
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-17 23:05:28,575 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.33
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 00:28:05,014 - INFO - Usage tracker initialized
+2025-12-18 00:28:05,836 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 00:28:05,838 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:28:21,244 - INFO - Audio queued - Energy: 308
+2025-12-18 00:28:21,245 - INFO - Attempting transcription with Whisper API...
+2025-12-18 00:28:21,247 - INFO - Audio energy (308) - Using Google API (low energy)
+2025-12-18 00:28:21,247 - WARNING - Whisper audio format error: Audio quality better suited for Google Speech Recognition
+2025-12-18 00:28:21,248 - INFO - Falling back to Google Speech Recognition...
+2025-12-18 00:28:21,248 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:28:22,089 - INFO - Google: Could not understand audio
+2025-12-18 00:28:27,864 - INFO - Audio queued - Energy: 255
+2025-12-18 00:28:27,865 - INFO - Attempting transcription with Whisper API...
+2025-12-18 00:28:27,866 - INFO - Audio energy (255) - Using Google API (low energy)
+2025-12-18 00:28:27,866 - WARNING - Whisper audio format error: Audio quality better suited for Google Speech Recognition
+2025-12-18 00:28:27,866 - INFO - Falling back to Google Speech Recognition...
+2025-12-18 00:28:27,866 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:28:28,717 - INFO - ✓ Google API successful: 'خاک...'
+2025-12-18 00:28:28,717 - INFO - Transcription result: [Google Speech] خاک
+2025-12-18 00:28:28,718 - INFO - Service status updated: Google Speech
+2025-12-18 00:28:28,729 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:45:41,021 - INFO - Usage tracker initialized
+2025-12-18 00:45:41,767 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 00:45:41,768 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:45:54,257 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 00:46:06,209 - INFO - Audio queued - Energy: 1214
+2025-12-18 00:46:06,210 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:46:08,070 - INFO - ✓ Google API successful: 'بابا تو قبلاً با این ترشحول کار...'
+2025-12-18 00:46:08,071 - INFO - Transcription result: [Google Speech] بابا تو قبلاً با این ترشحول کار
+2025-12-18 00:46:08,071 - INFO - Service status updated: Google Speech
+2025-12-18 00:46:08,087 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:46:16,808 - INFO - Audio queued - Energy: 402
+2025-12-18 00:46:16,809 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:46:18,020 - INFO - Google: Could not understand audio, trying Whisper API...
+2025-12-18 00:46:18,020 - INFO - Attempting transcription with Whisper API...
+2025-12-18 00:46:18,024 - INFO - Audio energy (402) - Using Google API (low energy)
+2025-12-18 00:46:18,024 - INFO - Whisper skipped audio: Audio quality better suited for Google Speech Recognition
+2025-12-18 00:46:22,138 - INFO - Audio queued - Energy: 883
+2025-12-18 00:46:22,138 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:46:23,999 - INFO - ✓ Google API successful: '‏how today chand you...'
+2025-12-18 00:46:24,000 - INFO - Transcription result: [Google Speech] ‏how today chand you
+2025-12-18 00:46:24,001 - INFO - Service status updated: Google Speech
+2025-12-18 00:46:24,008 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:46:27,550 - INFO - Audio queued - Energy: 563
+2025-12-18 00:46:27,551 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:46:29,351 - INFO - ✓ Google API successful: 'انسر...'
+2025-12-18 00:46:29,352 - INFO - Transcription result: [Google Speech] انسر
+2025-12-18 00:46:29,352 - INFO - Service status updated: Google Speech
+2025-12-18 00:46:29,357 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:46:32,740 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 00:47:07,218 - INFO - Audio queued - Energy: 687
+2025-12-18 00:47:07,219 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:47:08,767 - INFO - ✓ Google API successful: 'سلام چطورید من می‌خوام ببینم که...'
+2025-12-18 00:47:08,768 - INFO - Transcription result: [Google Speech] سلام چطورید من می‌خوام ببینم که
+2025-12-18 00:47:08,769 - INFO - Service status updated: Google Speech
+2025-12-18 00:47:08,777 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:47:12,307 - INFO - Audio queued - Energy: 596
+2025-12-18 00:47:12,308 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:47:14,695 - INFO - ✓ Google API successful: 'ریده تو ترش هولدامون...'
+2025-12-18 00:47:14,696 - INFO - Transcription result: [Google Speech] ریده تو ترش هولدامون
+2025-12-18 00:47:14,696 - INFO - Service status updated: Google Speech
+2025-12-18 00:47:14,700 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:47:22,497 - INFO - Audio queued - Energy: 774
+2025-12-18 00:47:22,498 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:47:25,071 - INFO - ✓ Google API successful: 'اوکی من هر چند وقت یه بار...'
+2025-12-18 00:47:25,072 - INFO - Transcription result: [Google Speech] اوکی من هر چند وقت یه بار
+2025-12-18 00:47:25,072 - INFO - Service status updated: Google Speech
+2025-12-18 00:47:25,079 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:47:27,587 - INFO - Audio queued - Energy: 438
+2025-12-18 00:47:27,588 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:47:29,568 - INFO - ✓ Google API successful: 'افسردگی دارم و این خیلی اذیتم...'
+2025-12-18 00:47:29,568 - INFO - Transcription result: [Google Speech] افسردگی دارم و این خیلی اذیتم
+2025-12-18 00:47:29,569 - INFO - Service status updated: Google Speech
+2025-12-18 00:47:29,576 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:47:32,674 - INFO - Audio queued - Energy: 445
+2025-12-18 00:47:32,675 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:47:34,793 - INFO - ✓ Google API successful: 'امشب امشب به نظرم زندگی مزخرف‌ترین چیز ممکنه...'
+2025-12-18 00:47:34,794 - INFO - Transcription result: [Google Speech] امشب امشب به نظرم زندگی مزخرف‌ترین چیز ممکنه
+2025-12-18 00:47:34,795 - INFO - Service status updated: Google Speech
+2025-12-18 00:47:34,800 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:47:37,777 - INFO - Audio queued - Energy: 322
+2025-12-18 00:47:37,777 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:47:39,252 - INFO - ✓ Google API successful: 'و هیچ لذتی ازش نمی‌برم...'
+2025-12-18 00:47:39,253 - INFO - Transcription result: [Google Speech] و هیچ لذتی ازش نمی‌برم
+2025-12-18 00:47:39,253 - INFO - Service status updated: Google Speech
+2025-12-18 00:47:39,264 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:47:53,027 - INFO - Audio queued - Energy: 431
+2025-12-18 00:47:53,028 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:47:55,222 - INFO - ✓ Google API successful: 'آی ویل...'
+2025-12-18 00:47:55,223 - INFO - Transcription result: [Google Speech] آی ویل
+2025-12-18 00:47:55,224 - INFO - Service status updated: Google Speech
+2025-12-18 00:47:55,240 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 00:48:08,287 - INFO - Audio queued - Energy: 627
+2025-12-18 00:48:08,287 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 00:48:09,639 - INFO - ✓ Google API successful: 'آی ویل مایسل...'
+2025-12-18 00:48:09,639 - INFO - Transcription result: [Google Speech] آی ویل مایسل
+2025-12-18 00:48:09,640 - INFO - Service status updated: Google Speech
+2025-12-18 00:48:09,657 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:12:47,596 - INFO - Usage tracker initialized
+2025-12-18 02:12:48,296 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 02:12:48,297 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:12:55,662 - INFO - Audio queued - Energy: 327
+2025-12-18 02:12:55,663 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:12:57,011 - INFO - ✓ Google API successful: 'سلام خوبی امیدوارم که خوب شده باشی و...'
+2025-12-18 02:12:57,011 - INFO - Transcription result: [Google Speech] سلام خوبی امیدوارم که خوب شده باشی و
+2025-12-18 02:12:57,012 - INFO - Service status updated: Google Speech
+2025-12-18 02:12:57,028 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:13:26,525 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 02:13:27,540 - INFO - Audio queued - Energy: 327
+2025-12-18 02:14:07,603 - INFO - Usage tracker initialized
+2025-12-18 02:14:08,159 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 02:14:08,160 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:14:23,422 - INFO - Audio queued - Energy: 337
+2025-12-18 02:14:23,422 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:14:24,925 - INFO - ✓ Google API successful: 'سلام خوبی من اومدم به عنوان یک پیش...'
+2025-12-18 02:14:24,926 - INFO - Transcription result: [Google Speech] سلام خوبی من اومدم به عنوان یک پیش
+2025-12-18 02:14:24,927 - INFO - Service status updated: Google Speech
+2025-12-18 02:14:24,948 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:14:48,862 - INFO - Audio queued - Energy: 470
+2025-12-18 02:14:48,863 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:14:50,309 - INFO - Google: Could not understand audio, trying Whisper API...
+2025-12-18 02:14:50,309 - INFO - Attempting transcription with Whisper API...
+2025-12-18 02:14:50,312 - INFO - Audio energy (470) - Using Google API (low energy)
+2025-12-18 02:14:50,312 - INFO - Whisper skipped audio: Audio quality better suited for Google Speech Recognition
+2025-12-18 02:15:14,302 - INFO - Audio queued - Energy: 307
+2025-12-18 02:15:14,303 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:15:15,908 - INFO - ✓ Google API successful: 'الان ثابت شد که تغییراتمون خوب عمل نکرده...'
+2025-12-18 02:15:15,909 - INFO - Transcription result: [Google Speech] الان ثابت شد که تغییراتمون خوب عمل نکرده
+2025-12-18 02:15:15,910 - INFO - Service status updated: Google Speech
+2025-12-18 02:15:15,918 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:17:48,898 - INFO - Usage tracker initialized
+2025-12-18 02:17:49,545 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+
+2025-12-18 02:17:49,546 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:17:56,696 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:17:58,132 - INFO - ✓ Google API successful: 'سلام بر تو ای نسخه اصلاح شده...'
+2025-12-18 02:17:58,133 - INFO - Transcription result: [Google Speech] سلام بر تو ای نسخه اصلاح شده
+2025-12-18 02:17:58,134 - INFO - Service status updated: Google Speech
+2025-12-18 02:17:58,148 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:18:02,064 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:03,117 - INFO - ✓ Google API successful: 'الان تو قراره...'
+2025-12-18 02:18:03,118 - INFO - Transcription result: [Google Speech] الان تو قراره
+2025-12-18 02:18:03,118 - INFO - Service status updated: Google Speech
+2025-12-18 02:18:03,120 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:18:07,395 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:08,235 - INFO - Google: Could not understand audio, trying Whisper API...
+2025-12-18 02:18:08,235 - INFO - Attempting transcription with Whisper API...
+2025-12-18 02:18:08,236 - INFO - Audio energy too low (1), skipping transcription
+2025-12-18 02:18:08,236 - INFO - Whisper skipped audio: Audio contains mostly silence
+2025-12-18 02:18:12,707 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:13,935 - INFO - ✓ Google API successful: '‏let's com...'
+2025-12-18 02:18:13,936 - INFO - Transcription result: [Google Speech] ‏let's com
+2025-12-18 02:18:13,936 - INFO - Service status updated: Google Speech
+2025-12-18 02:18:13,945 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:18:18,078 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:19,498 - INFO - ✓ Google API successful: '‏and your...'
+2025-12-18 02:18:19,498 - INFO - Transcription result: [Google Speech] ‏and your
+2025-12-18 02:18:19,499 - INFO - Service status updated: Google Speech
+2025-12-18 02:18:19,505 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:18:23,441 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:24,219 - INFO - Google: Could not understand audio, trying Whisper API...
+2025-12-18 02:18:24,220 - INFO - Attempting transcription with Whisper API...
+2025-12-18 02:18:24,221 - INFO - Audio energy too low (0), skipping transcription
+2025-12-18 02:18:24,221 - INFO - Whisper skipped audio: Audio contains mostly silence
+2025-12-18 02:18:28,808 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:29,552 - INFO - Google: Could not understand audio, trying Whisper API...
+2025-12-18 02:18:29,553 - INFO - Attempting transcription with Whisper API...
+2025-12-18 02:18:29,554 - INFO - Audio energy too low (1), skipping transcription
+2025-12-18 02:18:29,554 - INFO - Whisper skipped audio: Audio contains mostly silence
+2025-12-18 02:18:34,132 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:34,972 - INFO - Google: Could not understand audio, trying Whisper API...
+2025-12-18 02:18:34,973 - INFO - Attempting transcription with Whisper API...
+2025-12-18 02:18:34,974 - INFO - Audio energy too low (1), skipping transcription
+2025-12-18 02:18:34,974 - INFO - Whisper skipped audio: Audio contains mostly silence
+2025-12-18 02:18:39,381 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:40,639 - INFO - ✓ Google API successful: 'خوب سلام بر تو ای نسخه...'
+2025-12-18 02:18:40,640 - INFO - Transcription result: [Google Speech] خوب سلام بر تو ای نسخه
+2025-12-18 02:18:40,641 - INFO - Service status updated: Google Speech
+2025-12-18 02:18:40,642 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:18:44,471 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:45,938 - INFO - ✓ Google API successful: 'شده و ای نسخه اورجینال...'
+2025-12-18 02:18:45,939 - INFO - Transcription result: [Google Speech] شده و ای نسخه اورجینال
+2025-12-18 02:18:45,939 - INFO - Service status updated: Google Speech
+2025-12-18 02:18:45,942 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:18:49,557 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:51,791 - INFO - ✓ Google API successful: 'من اومدم ببینم که کدومتون بهتر عمل می‌کنید برای...'
+2025-12-18 02:18:51,792 - INFO - Transcription result: [Google Speech] من اومدم ببینم که کدومتون بهتر عمل می‌کنید برای
+2025-12-18 02:18:51,792 - INFO - Service status updated: Google Speech
+2025-12-18 02:18:51,798 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:18:54,648 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:18:57,415 - INFO - ✓ Google API successful: 'تایم آخ دی اس ام فایو اینترویو...'
+2025-12-18 02:18:57,416 - INFO - Transcription result: [Google Speech] تایم آخ دی اس ام فایو اینترویو
+2025-12-18 02:18:57,416 - INFO - Service status updated: Google Speech
+2025-12-18 02:18:57,422 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:18:59,733 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:19:01,080 - INFO - ✓ Google API successful: 'حالا تو زندگیت احساس کردی که هیچی مهم نیست و می‌خو...'
+2025-12-18 02:19:01,081 - INFO - Transcription result: [Google Speech] حالا تو زندگیت احساس کردی که هیچی مهم نیست و می‌خوای بمیری
+2025-12-18 02:19:01,081 - INFO - Service status updated: Google Speech
+2025-12-18 02:19:01,090 - INFO - Usage stats updated: Processed: 3.58 minutes | Est. Cost: $0.02
+2025-12-18 02:19:04,825 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:19:05,657 - INFO - Google: Could not understand audio, trying Whisper API...
+2025-12-18 02:19:05,657 - INFO - Attempting transcription with Whisper API...
+2025-12-18 02:19:05,658 - INFO - Audio energy too low (0), skipping transcription
+2025-12-18 02:19:05,658 - INFO - Whisper skipped audio: Audio contains mostly silence
+2025-12-18 02:19:09,920 - INFO - Attempting transcription with Google Speech Recognition...
+2025-12-18 02:19:10,963 - INFO - Google: Could not understand audio, trying Whisper API...
+2025-12-18 02:19:10,965 - INFO - Attempting transcription with Whisper API...
+2025-12-18 02:19:10,967 - INFO - Audio energy too low (0), skipping transcription
+2025-12-18 02:19:10,968 - INFO - Whisper skipped audio: Audio contains mostly silence
+2025-12-18 02:19:12,554 - INFO - 
+==================================================
+Whisper API Usage Statistics
+==================================================
+Total Minutes Processed: 3.58
+Estimated Cost: $0.02
+Successful Minutes: 3.00
+Failed Attempts: 7
+Today's Minutes: 0.00
+This Week's Minutes: 3.58
+Last Updated: 2025-12-17T15:02:35.021460
+==================================================
+

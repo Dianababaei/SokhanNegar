@@ -8,18 +8,25 @@ import sounddevice as sd
 import numpy as np
 import logging
 import socket
+import sys
 from datetime import datetime
 
 from whisper_api import whisper_recognize
 from usage_tracker import get_tracker
 import openai
 
+# Set console encoding to UTF-8 for Windows
+if sys.platform == 'win32':
+    import codecs
+    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.detach())
+    sys.stderr = codecs.getwriter('utf-8')(sys.stderr.detach())
+
 # Configure logging for service tracking
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('transcription.log'),
+        logging.FileHandler('transcription.log', encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
@@ -28,13 +35,13 @@ logger = logging.getLogger(__name__)
 class SokhanNegarLive:
     # Service status color constants
     SERVICE_COLORS = {
-        'Whisper API': '#4CAF50',      # Green
-        'Google (Fallback)': '#FFC107'  # Yellow/Amber
+        'Google Speech': '#4CAF50',    # Green (primary/fast/reliable)
+        'Whisper API': '#9C27B0',      # Purple (backup/premium accuracy)
     }
-    
+
     SERVICE_ICONS = {
-        'Whisper API': '🟢',
-        'Google (Fallback)': '🟡'
+        'Google Speech': '🟢',         # Green circle (primary)
+        'Whisper API': '🟣',           # Purple circle (backup)
     }
     
     def __init__(self):
@@ -46,6 +53,14 @@ class SokhanNegarLive:
         
         # تنظیمات
         self.recognizer = sr.Recognizer()
+        # Adjust recognizer settings optimized for your microphone
+        self.recognizer.energy_threshold = 4000  # Matches GitHub repo settings
+        self.recognizer.dynamic_energy_threshold = True
+        self.recognizer.dynamic_energy_adjustment_damping = 0.15
+        self.recognizer.dynamic_energy_ratio = 1.5
+        self.recognizer.pause_threshold = 0.8  # Matches GitHub repo (0.8s between phrases)
+        self.recognizer.phrase_threshold = 0.3  # Minimum phrase length
+        self.recognizer.non_speaking_duration = 0.5  # Wait for pauses
         self.is_listening = False
         self.audio_queue = queue.Queue()
         
@@ -54,7 +69,7 @@ class SokhanNegarLive:
         logger.info("Usage tracker initialized")
         
         # Service and usage tracking state
-        self.current_service = 'Whisper API'  # Default to Whisper
+        self.current_service = 'Google Speech'  # Default to Google (free and reliable)
         
         # ایجاد رابط کاربری
         self.create_ui()
@@ -92,8 +107,8 @@ class SokhanNegarLive:
         self.status_label.pack(padx=15, anchor=tk.W)
         
         # Service status indicator
-        self.service_status_label = tk.Label(self.root, 
-                                           text="🟢 Whisper API",
+        self.service_status_label = tk.Label(self.root,
+                                           text="🟢 Google Speech",
                                            font=('Segoe UI', 9, 'bold'),
                                            fg='#4CAF50', bg='#1e1e1e')
         self.service_status_label.pack(padx=15, anchor=tk.W)
@@ -186,15 +201,23 @@ class SokhanNegarLive:
     def listen_continuously(self):
         """گوش دادن مداوم با sounddevice"""
         fs = 16000
-        duration = 5
+        duration = 5  # 5 seconds to match GitHub repo for complete sentences
         while self.is_listening:
             try:
                 print("در حال گوش دادن...")
                 audio_data = sd.rec(int(duration * fs), samplerate=fs, channels=1, dtype='int16')
                 sd.wait()
                 audio_data = np.squeeze(audio_data)
+
+                # Check if audio has sufficient energy before queuing
+                rms_energy = np.sqrt(np.mean(audio_data.astype(np.float32) ** 2))
+
+                # Queue ALL audio - let Google Speech Recognition handle silence detection
+                # This prevents missing quiet speech in medical interviews
                 audio = sr.AudioData(audio_data.tobytes(), fs, 2)
                 self.audio_queue.put(audio)
+                logger.debug(f"Audio queued - Energy: {rms_energy:.0f}")
+
             except Exception as e:
                 print(f"خطا در گوش دادن: {e}")
                 continue
@@ -204,65 +227,64 @@ class SokhanNegarLive:
             try:
                 audio = self.audio_queue.get(timeout=1)
                 self.root.after(0, self.update_status, "در حال پردازش...")
-                
-                # Try Whisper API first
+
+                # Try Google Speech Recognition first (faster, free, reliable)
                 text = None
                 service_used = None
-                
+
                 try:
-                    logger.info("Attempting transcription with Whisper API...")
-                    text = whisper_recognize(audio)
-                    service_used = "Whisper API"
-                    logger.info(f"✓ Whisper API successful: '{text[:50]}...'")
-                    
-                except openai.AuthenticationError as e:
-                    logger.warning(f"Whisper authentication failed: {e}")
-                    logger.info("Falling back to Google Speech Recognition...")
-                    
-                except openai.RateLimitError as e:
-                    logger.warning(f"Whisper rate limit exceeded: {e}")
-                    logger.info("Falling back to Google Speech Recognition...")
-                    
-                except openai.APIError as e:
-                    logger.warning(f"Whisper API error: {e}")
-                    logger.info("Falling back to Google Speech Recognition...")
-                    
-                except (socket.timeout, socket.gaierror, socket.error, ConnectionError) as e:
-                    logger.warning(f"Whisper network error: {e}")
-                    logger.info("Falling back to Google Speech Recognition...")
-                    
-                except ValueError as e:
-                    logger.warning(f"Whisper audio format error: {e}")
-                    logger.info("Falling back to Google Speech Recognition...")
-                    
-                except Exception as e:
-                    logger.warning(f"Unexpected Whisper error: {e}")
-                    logger.info("Falling back to Google Speech Recognition...")
-                
-                # If Whisper failed, fall back to Google
+                    logger.info("Attempting transcription with Google Speech Recognition...")
+                    # Use Persian as primary with English as alternative for better mixed-language support
+                    # This helps Google recognize code-switched speech (Persian + English)
+                    text = self.recognizer.recognize_google(
+                        audio,
+                        language='fa-IR',  # Primary: Persian
+                        show_all=False
+                    )
+                    service_used = "Google Speech"
+                    logger.info(f"✓ Google API successful: '{text[:50]}...'")
+                    # Update service status to Google
+                    self.root.after(0, self.update_service_status, "Google Speech")
+
+                except sr.UnknownValueError:
+                    logger.info("Google: Could not understand audio, trying Whisper API...")
+
+                except sr.RequestError as e:
+                    logger.warning(f"Google API error: {e}, trying Whisper API...")
+
+                # If Google failed, fall back to Whisper API
                 if text is None:
                     try:
-                        logger.info("Attempting transcription with Google Speech Recognition...")
-                        text = self.recognizer.recognize_google(audio, language='fa-IR')
-                        service_used = "Google (Fallback)"
-                        logger.info(f"✓ Google API successful: '{text[:50]}...'")
-                        # Update service status to Google fallback
-                        self.root.after(0, self.update_service_status, "Google (Fallback)")
-                        
-                    except sr.UnknownValueError:
-                        logger.info("Google: Could not understand audio")
+                        logger.info("Attempting transcription with Whisper API...")
+                        text = whisper_recognize(audio)
+                        service_used = "Whisper API"
+                        logger.info(f"✓ Whisper API successful: '{text[:50]}...'")
+                        # Update service status to Whisper
+                        self.root.after(0, self.update_service_status, "Whisper API")
+
+                    except openai.AuthenticationError as e:
+                        logger.error(f"Whisper authentication failed: {e}")
                         continue
-                        
-                    except sr.RequestError as e:
-                        logger.error(f"Google API error: {e}")
-                        self.root.after(0, self.update_status, f"خطا در سرویس: {e}")
-                        time.sleep(2)
-                        self.root.after(0, self.update_status, "● در حال گوش دادن...")
+
+                    except openai.RateLimitError as e:
+                        logger.error(f"Whisper rate limit exceeded: {e}")
                         continue
-                
-                # Update service status if Whisper succeeded
-                if service_used == "Whisper API":
-                    self.root.after(0, self.update_service_status, "Whisper API")
+
+                    except openai.APIError as e:
+                        logger.error(f"Whisper API error: {e}")
+                        continue
+
+                    except (socket.timeout, socket.gaierror, socket.error, ConnectionError) as e:
+                        logger.error(f"Whisper network error: {e}")
+                        continue
+
+                    except ValueError as e:
+                        logger.info(f"Whisper skipped audio: {e}")
+                        continue
+
+                    except Exception as e:
+                        logger.error(f"Unexpected Whisper error: {e}")
+                        continue
                 
                 # Display result if text was successfully transcribed
                 if text and text.strip():

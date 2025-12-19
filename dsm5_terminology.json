@@ -1,0 +1,1567 @@
+{
+  "metadata": {
+    "title": "DSM-5 Psychiatric Terminology for Iranian Clinical Settings",
+    "version": "1.0",
+    "description": "Comprehensive list of DSM-5 psychiatric terms with Persian translations for speech recognition hints in code-switching contexts",
+    "source": "DSM-5 (Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition)",
+    "context": "Iranian psychiatric practice with English-Persian medical code-switching",
+    "total_terms": 186,
+    "last_updated": "2024",
+    "frequency_scale": "1=very common, 2=common, 3=moderate, 4=less common",
+    "usage": "Use as speech recognition hints to improve recognition accuracy for medical terminology in bilingual (fa-IR + en-US) speech recognition"
+  },
+  "mood_disorders": [
+    {
+      "english": "Major Depressive Disorder",
+      "persian": "اختلال افسردگی اساسی",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["depression", "major depression", "unipolar depression"]
+    },
+    {
+      "english": "Persistent Depressive Disorder",
+      "persian": "اختلال افسردگی پایدار",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["dysthymia", "dysthymic disorder"]
+    },
+    {
+      "english": "Disruptive Mood Dysregulation Disorder",
+      "persian": "اختلال نظم‌ناپذیری خلقی مخل",
+      "category": "disorder",
+      "frequency": 3,
+      "alternate_names": ["DMDD"]
+    },
+    {
+      "english": "Bipolar I Disorder",
+      "persian": "اختلال دوقطبی نوع اول",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["bipolar disorder type I"]
+    },
+    {
+      "english": "Bipolar II Disorder",
+      "persian": "اختلال دوقطبی نوع دوم",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["bipolar disorder type II"]
+    },
+    {
+      "english": "Cyclothymic Disorder",
+      "persian": "اختلال سیکلوتایمی",
+      "category": "disorder",
+      "frequency": 3,
+      "alternate_names": ["cyclothymia"]
+    },
+    {
+      "english": "Substance-Induced Mood Disorder",
+      "persian": "اختلال خلقی ناشی از مواد",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Mood Disorder Due to Medical Condition",
+      "persian": "اختلال خلقی ناشی از شرایط پزشکی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Premenstrual Dysphoric Disorder",
+      "persian": "اختلال دیسفوری پیش از قاعدگی",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["PMDD"]
+    }
+  ],
+  "anxiety_disorders": [
+    {
+      "english": "Generalized Anxiety Disorder",
+      "persian": "اختلال اضطراب فراگیر",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["GAD", "generalized anxiety"]
+    },
+    {
+      "english": "Anxiety Disorder",
+      "persian": "اختلال اضطراب",
+      "category": "disorder",
+      "frequency": 1
+    },
+    {
+      "english": "Panic Disorder",
+      "persian": "اختلال هراس",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["panic disorder with agoraphobia"]
+    },
+    {
+      "english": "Agoraphobia",
+      "persian": "آگورافوبیا",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["agoraphobic disorder"]
+    },
+    {
+      "english": "Specific Phobia",
+      "persian": "فوبیای خاص",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Social Anxiety Disorder",
+      "persian": "اختلال اضطراب اجتماعی",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["social phobia"]
+    },
+    {
+      "english": "Selective Mutism",
+      "persian": "بی‌گویی انتخابی",
+      "category": "disorder",
+      "frequency": 3
+    },
+    {
+      "english": "Separation Anxiety Disorder",
+      "persian": "اختلال اضطراب جدایی",
+      "category": "disorder",
+      "frequency": 3
+    },
+    {
+      "english": "Anxiety Disorder Due to Medical Condition",
+      "persian": "اختلال اضطراب ناشی از شرایط پزشکی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Substance-Induced Anxiety Disorder",
+      "persian": "اختلال اضطراب ناشی از مواد",
+      "category": "disorder",
+      "frequency": 2
+    }
+  ],
+  "obsessive_compulsive_related": [
+    {
+      "english": "Obsessive-Compulsive Disorder",
+      "persian": "اختلال وسواسی-فکری فشار وری",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["OCD"]
+    },
+    {
+      "english": "Body Dysmorphic Disorder",
+      "persian": "اختلال بدشکلی بدن",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["BDD"]
+    },
+    {
+      "english": "Hoarding Disorder",
+      "persian": "اختلال انباشتن",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Trichotillomania",
+      "persian": "تریکوتیلومانیا",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["hair-pulling disorder"]
+    },
+    {
+      "english": "Excoriation Disorder",
+      "persian": "اختلال خراش‌زدگی",
+      "category": "disorder",
+      "frequency": 3,
+      "alternate_names": ["skin-picking disorder"]
+    }
+  ],
+  "trauma_related": [
+    {
+      "english": "Post-Traumatic Stress Disorder",
+      "persian": "اختلال استرس پس از سانحه",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["PTSD"]
+    },
+    {
+      "english": "Acute Stress Disorder",
+      "persian": "اختلال استرس حاد",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["ASD"]
+    },
+    {
+      "english": "Adjustment Disorder",
+      "persian": "اختلال سازگاری",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Reactive Attachment Disorder",
+      "persian": "اختلال اتصال واکنشی",
+      "category": "disorder",
+      "frequency": 3
+    },
+    {
+      "english": "Disinhibited Social Engagement Disorder",
+      "persian": "اختلال تشارک اجتماعی بی‌تحفظ",
+      "category": "disorder",
+      "frequency": 3
+    }
+  ],
+  "psychotic_disorders": [
+    {
+      "english": "Schizophrenia",
+      "persian": "اسکیزوفرنیا",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["schizophrenic disorder"]
+    },
+    {
+      "english": "Schizophreniform Disorder",
+      "persian": "اختلال شبه‌اسکیزوفرنی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Schizoaffective Disorder",
+      "persian": "اختلال سوگیرانه اسکیزوفرنی",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["schizoaffective"]
+    },
+    {
+      "english": "Delusional Disorder",
+      "persian": "اختلال وهم",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Brief Psychotic Disorder",
+      "persian": "اختلال روان‌پریشی کوتاه",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Psychotic Disorder Due to Medical Condition",
+      "persian": "اختلال روان‌پریشی ناشی از شرایط پزشکی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Substance-Induced Psychotic Disorder",
+      "persian": "اختلال روان‌پریشی ناشی از مواد",
+      "category": "disorder",
+      "frequency": 2
+    }
+  ],
+  "symptoms_mood": [
+    {
+      "english": "depressed",
+      "persian": "افسرده",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "sad",
+      "persian": "غمگین",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "anhedonia",
+      "persian": "بی‌لذتی",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "hopelessness",
+      "persian": "ناامیدی",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "worthlessness",
+      "persian": "بی‌ارزشی",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "guilt",
+      "persian": "گناه",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "manic",
+      "persian": "مانیایی",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "mania",
+      "persian": "مانیا",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "elevated mood",
+      "persian": "خلق بالا",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "euphoria",
+      "persian": "خوشحالی بیش‌از‌حد",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 2
+    },
+    {
+      "english": "irritability",
+      "persian": "تحریک‌پذیری",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "irritable mood",
+      "persian": "خلق تحریک‌شده",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 1
+    },
+    {
+      "english": "dysphoria",
+      "persian": "دیسفوریا",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 2
+    },
+    {
+      "english": "lability",
+      "persian": "نوسان خلقی",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 2
+    },
+    {
+      "english": "emotional lability",
+      "persian": "نوسان احساسی",
+      "category": "symptom",
+      "subcategory": "mood",
+      "frequency": 2
+    }
+  ],
+  "symptoms_cognitive": [
+    {
+      "english": "insomnia",
+      "persian": "بی‌خوابی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "hypersomnia",
+      "persian": "خواب‌آلودگی بیش",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "fatigue",
+      "persian": "خستگی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "concentration",
+      "persian": "تمرکز",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "poor concentration",
+      "persian": "تمرکز ضعیف",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "memory problems",
+      "persian": "مشکلات یادی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "memory loss",
+      "persian": "فراموشی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "confusion",
+      "persian": "سردرگمی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "indecisiveness",
+      "persian": "تردید",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 2
+    },
+    {
+      "english": "psychosis",
+      "persian": "روان‌پریشی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "psychotic",
+      "persian": "روان‌پریشانه",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "hallucinations",
+      "persian": "توهم‌های حسی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "visual hallucinations",
+      "persian": "توهم‌های بینایی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "auditory hallucinations",
+      "persian": "توهم‌های شنوایی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "delusions",
+      "persian": "وهم‌ها",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "paranoia",
+      "persian": "پارانویا",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "paranoid",
+      "persian": "پارانویایی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "persecutory delusions",
+      "persian": "وهم‌های تعقیب",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "grandiose delusions",
+      "persian": "وهم‌های بزرگی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 2
+    },
+    {
+      "english": "racing thoughts",
+      "persian": "فکرهای تند",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "flight of ideas",
+      "persian": "پرتاب ایده‌ها",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 2
+    },
+    {
+      "english": "disorganized speech",
+      "persian": "سخن بی‌نظم",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 1
+    },
+    {
+      "english": "tangential speech",
+      "persian": "سخن مماسی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 2
+    },
+    {
+      "english": "loosening of associations",
+      "persian": "شل‌شدگی ارتباطات",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 2
+    },
+    {
+      "english": "word salad",
+      "persian": "سالاد کلمات",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 2
+    },
+    {
+      "english": "circumstantial",
+      "persian": "پیرامونی",
+      "category": "symptom",
+      "subcategory": "cognitive",
+      "frequency": 2
+    }
+  ],
+  "symptoms_anxiety": [
+    {
+      "english": "anxiety",
+      "persian": "اضطراب",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "panic",
+      "persian": "هراس",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "panic attacks",
+      "persian": "حملات هراس",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "worry",
+      "persian": "نگرانی",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "excessive worry",
+      "persian": "نگرانی بیش‌از‌حد",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "nervousness",
+      "persian": "عصبانیت",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "restlessness",
+      "persian": "بی‌قراری",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "tension",
+      "persian": "کشیدگی",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "muscle tension",
+      "persian": "کشیدگی عضلانی",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "fear",
+      "persian": "ترس",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "phobia",
+      "persian": "فوبیا",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "obsession",
+      "persian": "وسواس",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "obsessions",
+      "persian": "وسواس‌ها",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "compulsion",
+      "persian": "فشار وری",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "compulsions",
+      "persian": "فشار‌وری‌ها",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "hypervigilance",
+      "persian": "هوشیاری افزایش‌یافته",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "startle response",
+      "persian": "پاسخ جنقی",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "avoidance",
+      "persian": "دوری‌جویی",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    },
+    {
+      "english": "avoidant behavior",
+      "persian": "رفتار دوری‌جویانه",
+      "category": "symptom",
+      "subcategory": "anxiety",
+      "frequency": 1
+    }
+  ],
+  "symptoms_behavioral": [
+    {
+      "english": "agitation",
+      "persian": "تهیج",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "aggression",
+      "persian": "تجاوز",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "aggressive",
+      "persian": "تجاوزکارانه",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "impulsivity",
+      "persian": "تکانه‌گرایی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "impulsive",
+      "persian": "تکانه‌ای",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "self-harm",
+      "persian": "خود‌آسیب",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "self-injurious behavior",
+      "persian": "رفتار خود‌آسیب‌رسان",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "suicidal",
+      "persian": "خودکشی‌نامه",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "suicidal ideation",
+      "persian": "اندیشه‌های خودکشی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "suicidal attempt",
+      "persian": "تلاش خودکشی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "homicidal",
+      "persian": "قتل‌نامه",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "homicidal ideation",
+      "persian": "اندیشه‌های قتل",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "recklessness",
+      "persian": "بی‌احتیاطی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "risky behavior",
+      "persian": "رفتار خطرناک",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "withdrawal",
+      "persian": "عقب‌نشینی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "social withdrawal",
+      "persian": "عقب‌نشینی اجتماعی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "isolation",
+      "persian": "انزوای اجتماعی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "avolition",
+      "persian": "بی‌انگیزگی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "apathy",
+      "persian": "بی‌اعتنایی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "decreased motivation",
+      "persian": "کاهش انگیزه",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "hyperactivity",
+      "persian": "فعالیت بیش",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "inattention",
+      "persian": "بی‌توجهی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "distractibility",
+      "persian": "حواس‌پرتی",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 1
+    },
+    {
+      "english": "catatonia",
+      "persian": "کاتاتونیا",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 2
+    },
+    {
+      "english": "waxy flexibility",
+      "persian": "انعطاف‌پذیری موم‌گونه",
+      "category": "symptom",
+      "subcategory": "behavioral",
+      "frequency": 2
+    }
+  ],
+  "symptoms_physical": [
+    {
+      "english": "headache",
+      "persian": "سردرد",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "chest pain",
+      "persian": "درد سینه",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "palpitations",
+      "persian": "تپش قلب",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "shortness of breath",
+      "persian": "تنگی نفس",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "dyspnea",
+      "persian": "دیسپنه",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "tremor",
+      "persian": "لرزش",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "sweating",
+      "persian": "تعریق",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "appetite loss",
+      "persian": "کاهش اشتهای",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "decreased appetite",
+      "persian": "کاهش اشتهای",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "increased appetite",
+      "persian": "افزایش اشتهای",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "weight loss",
+      "persian": "کاهش وزن",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "weight gain",
+      "persian": "افزایش وزن",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "dizziness",
+      "persian": "سرگیجه",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "vertigo",
+      "persian": "ورتیگو",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "nausea",
+      "persian": "تهوع",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    },
+    {
+      "english": "sexual dysfunction",
+      "persian": "ناکارآمدی جنسی",
+      "category": "symptom",
+      "subcategory": "physical",
+      "frequency": 1
+    }
+  ],
+  "diagnostic_criteria": [
+    {
+      "english": "onset",
+      "persian": "شروع",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "age of onset",
+      "persian": "سن شروع",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "duration",
+      "persian": "مدت",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "course",
+      "persian": "سیر",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "severity",
+      "persian": "شدت",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "mild",
+      "persian": "خفیف",
+      "category": "severity_level",
+      "frequency": 1
+    },
+    {
+      "english": "moderate",
+      "persian": "متوسط",
+      "category": "severity_level",
+      "frequency": 1
+    },
+    {
+      "english": "severe",
+      "persian": "شدید",
+      "category": "severity_level",
+      "frequency": 1
+    },
+    {
+      "english": "remission",
+      "persian": "بهبودی",
+      "category": "course_modifier",
+      "frequency": 1
+    },
+    {
+      "english": "partial remission",
+      "persian": "بهبودی جزئی",
+      "category": "course_modifier",
+      "frequency": 1
+    },
+    {
+      "english": "full remission",
+      "persian": "بهبودی کامل",
+      "category": "course_modifier",
+      "frequency": 1
+    },
+    {
+      "english": "relapse",
+      "persian": "عود",
+      "category": "course_modifier",
+      "frequency": 1
+    },
+    {
+      "english": "recovery",
+      "persian": "بهبودی",
+      "category": "course_modifier",
+      "frequency": 1
+    },
+    {
+      "english": "functional impairment",
+      "persian": "ناکارآمدی کارکردی",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "impaired functioning",
+      "persian": "کارکرد ضعیف",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "criteria",
+      "persian": "معیارها",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "diagnostic criteria",
+      "persian": "معیارهای تشخیصی",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "acute",
+      "persian": "حاد",
+      "category": "course_modifier",
+      "frequency": 1
+    },
+    {
+      "english": "chronic",
+      "persian": "مزمن",
+      "category": "course_modifier",
+      "frequency": 1
+    },
+    {
+      "english": "episodic",
+      "persian": "دوره‌ای",
+      "category": "course_modifier",
+      "frequency": 1
+    }
+  ],
+  "treatment_terms": [
+    {
+      "english": "medication",
+      "persian": "دارو",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "medications",
+      "persian": "داروها",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "antidepressant",
+      "persian": "داروی ضد افسردگی",
+      "category": "treatment",
+      "frequency": 1,
+      "alternate_names": ["antidepressants"]
+    },
+    {
+      "english": "antipsychotic",
+      "persian": "داروی ضد روان‌پریشی",
+      "category": "treatment",
+      "frequency": 1,
+      "alternate_names": ["antipsychotics"]
+    },
+    {
+      "english": "anxiolytic",
+      "persian": "داروی ضد اضطراب",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "mood stabilizer",
+      "persian": "دارویی برای تثبیت خلق",
+      "category": "treatment",
+      "frequency": 1,
+      "alternate_names": ["mood stabilizers"]
+    },
+    {
+      "english": "stimulant",
+      "persian": "داروی محرک",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "sedative",
+      "persian": "داروی آرام‌بخش",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "benzodiazepine",
+      "persian": "بنزودیازپین",
+      "category": "treatment",
+      "frequency": 1,
+      "alternate_names": ["benzodiazepines", "BZD"]
+    },
+    {
+      "english": "cognitive behavioral therapy",
+      "persian": "درمان رفتاری‌شناختی",
+      "category": "treatment",
+      "frequency": 1,
+      "alternate_names": ["CBT"]
+    },
+    {
+      "english": "psychotherapy",
+      "persian": "روان‌درمانی",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "therapy",
+      "persian": "درمان",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "therapy sessions",
+      "persian": "جلسات درمان",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "hospitalization",
+      "persian": "بستری",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "inpatient",
+      "persian": "بیمار بستری",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "outpatient",
+      "persian": "بیمار سرپایی",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "medication adherence",
+      "persian": "تبعیت از درمان دارویی",
+      "category": "treatment",
+      "frequency": 1,
+      "alternate_names": ["medication compliance"]
+    },
+    {
+      "english": "compliance",
+      "persian": "تبعیت",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "side effects",
+      "persian": "عوارض جانبی",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "efficacy",
+      "persian": "اثر‌بخشی",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "psychosocial",
+      "persian": "روان‌اجتماعی",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "family therapy",
+      "persian": "درمان خانوادگی",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "group therapy",
+      "persian": "درمان گروهی",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "individual therapy",
+      "persian": "درمان فردی",
+      "category": "treatment",
+      "frequency": 1
+    },
+    {
+      "english": "electroconvulsive therapy",
+      "persian": "درمان الکتروشوک",
+      "category": "treatment",
+      "frequency": 2,
+      "alternate_names": ["ECT"]
+    }
+  ],
+  "neurodevelopmental_disorders": [
+    {
+      "english": "Attention-Deficit/Hyperactivity Disorder",
+      "persian": "اختلال کمبود توجه و فعالیت بیش",
+      "category": "disorder",
+      "frequency": 1,
+      "alternate_names": ["ADHD"]
+    },
+    {
+      "english": "Autism Spectrum Disorder",
+      "persian": "اختلال طیف خودکار",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["ASD", "autism"]
+    },
+    {
+      "english": "Specific Learning Disorder",
+      "persian": "اختلال یادگیری خاص",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Communication Disorder",
+      "persian": "اختلال ارتباطی",
+      "category": "disorder",
+      "frequency": 3
+    },
+    {
+      "english": "Motor Disorder",
+      "persian": "اختلال حرکتی",
+      "category": "disorder",
+      "frequency": 3
+    }
+  ],
+  "personality_disorders": [
+    {
+      "english": "Borderline Personality Disorder",
+      "persian": "اختلال شخصیت مرزی",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["BPD"]
+    },
+    {
+      "english": "Narcissistic Personality Disorder",
+      "persian": "اختلال شخصیت نرسیستی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Antisocial Personality Disorder",
+      "persian": "اختلال شخصیت ضدمنافع",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Avoidant Personality Disorder",
+      "persian": "اختلال شخصیت دوری‌جو",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Dependent Personality Disorder",
+      "persian": "اختلال شخصیت وابسته",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Obsessive-Compulsive Personality Disorder",
+      "persian": "اختلال شخصیت وسواسی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Paranoid Personality Disorder",
+      "persian": "اختلال شخصیت پارانویایی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Schizoid Personality Disorder",
+      "persian": "اختلال شخصیت اسکیزوئید",
+      "category": "disorder",
+      "frequency": 3
+    },
+    {
+      "english": "Schizotypal Personality Disorder",
+      "persian": "اختلال شخصیت اسکیزوتایپ",
+      "category": "disorder",
+      "frequency": 3
+    },
+    {
+      "english": "Histrionic Personality Disorder",
+      "persian": "اختلال شخصیت نمایش‌گرانه",
+      "category": "disorder",
+      "frequency": 3
+    }
+  ],
+  "substance_use_disorders": [
+    {
+      "english": "Substance Use Disorder",
+      "persian": "اختلال مصرف مواد",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Alcohol Use Disorder",
+      "persian": "اختلال مصرف الکل",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Stimulant Use Disorder",
+      "persian": "اختلال مصرف محرک‌ها",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Opioid Use Disorder",
+      "persian": "اختلال مصرف اپیوئیدها",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Sedative Use Disorder",
+      "persian": "اختلال مصرف آرام‌بخش‌ها",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "dependence",
+      "persian": "وابستگی",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "addiction",
+      "persian": "اعتیاد",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "withdrawal",
+      "persian": "ترک مواد",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    },
+    {
+      "english": "tolerance",
+      "persian": "تحمل‌پذیری",
+      "category": "diagnostic_criterion",
+      "frequency": 1
+    }
+  ],
+  "neurocognitive_disorders": [
+    {
+      "english": "Major Neurocognitive Disorder",
+      "persian": "اختلال عصب‌شناختی اساسی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Mild Neurocognitive Disorder",
+      "persian": "اختلال عصب‌شناختی خفیف",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "dementia",
+      "persian": "زوال عقل",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Alzheimer's disease",
+      "persian": "بیماری آلزایمر",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Parkinson's disease",
+      "persian": "بیماری پارکینسون",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "cognitive decline",
+      "persian": "کاهش شناختی",
+      "category": "symptom",
+      "frequency": 2
+    }
+  ],
+  "sleep_disorders": [
+    {
+      "english": "Insomnia Disorder",
+      "persian": "اختلال بی‌خوابی",
+      "category": "disorder",
+      "frequency": 1
+    },
+    {
+      "english": "Hypersomnolence Disorder",
+      "persian": "اختلال خواب‌آلودگی بیش",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Narcolepsy",
+      "persian": "ناركولپسی",
+      "category": "disorder",
+      "frequency": 2
+    },
+    {
+      "english": "Obstructive Sleep Apnea",
+      "persian": "آپنه انسدادی خواب",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["sleep apnea"]
+    },
+    {
+      "english": "Restless Legs Syndrome",
+      "persian": "سندرم پاهای بی‌قرار",
+      "category": "disorder",
+      "frequency": 2,
+      "alternate_names": ["RLS"]
+    }
+  ],
+  "common_clinical_terms": [
+    {
+      "english": "patient",
+      "persian": "بیمار",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "diagnosis",
+      "persian": "تشخیص",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "prognosis",
+      "persian": "پیش‌آگهی",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "differential diagnosis",
+      "persian": "تشخیص افتراقی",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "psychiatric",
+      "persian": "روان‌پزشکی",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "psychiatrist",
+      "persian": "روان‌پزشک",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "psychologist",
+      "persian": "روان‌شناس",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "comorbidity",
+      "persian": "همراهی اختلالات",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "comorbid",
+      "persian": "همراه",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "etiology",
+      "persian": "علت‌شناسی",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "genetic",
+      "persian": "ژنتیکی",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "environmental",
+      "persian": "محیطی",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "specifier",
+      "persian": "مشخص‌کننده",
+      "category": "clinical_term",
+      "frequency": 1
+    },
+    {
+      "english": "longitudinal",
+      "persian": "طولی",
+      "category": "clinical_term",
+      "frequency": 1
+    }
+  ]
+}
